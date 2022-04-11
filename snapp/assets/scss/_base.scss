@@ -1,0 +1,85 @@
+
+$body-color:#f2f5f8;
+$bg-primary-color:#21aa58;
+
+$primary-color:#0c0c0cbf;
+$secondary-color:#444;
+
+$white-color:#fff;
+$black-color:#000;
+
+$border-color:#e5e5e5;
+$border-radius:8px;
+
+
+
+
+
+@font-face {
+    font-family: "vazir";
+    font-weight: 400;
+    font-style: normal;
+    src: url(../fonts/Vazir.woff) format('woff');
+}
+@font-face {
+    font-family: "vazir";
+    font-weight: 700;
+    font-style: normal;
+    src: url(../fonts/Vazir-Bold.woff) format('woff');
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* list-style: none; */
+}
+
+html{
+    direction: rtl;
+    font-size: 62.5%;
+}
+input{
+    direction: ltr;
+}
+
+body{
+    margin: 0;
+    font-family: 'vazir';
+    font-size: 1.4rem;
+    line-height: 1.7;
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.block{
+    display: block;
+    width: 100%;
+}
+
+.btn{
+    padding: 1rem 2rem;
+    border-radius: $border-radius;
+    text-align: center;
+    cursor: pointer;
+    // box-shadow: 0 10px 30px 8px rgba($color: #000000, $alpha: .4);
+}
+.btn-primary{
+    color:  $white-color;
+    background-color: $bg-primary-color;
+}
+.btn-secondary{
+    color: $primary-color;
+    background-color: $white-color;
+}
