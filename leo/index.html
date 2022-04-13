@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="./assets/css/main.css">
     <title>digikala</title>
 </head>
@@ -41,66 +43,9 @@
                 </div>
             </div>
             <div class="header__bottom">
-                <nav>
-                    <ul class="menu">
-                        <li>
-                            <a href="#">
-                                <span class="menu__image">
-                                    <img src="./assets/images/header/hamburger.png" alt="hamburger">
-                                </span>
-                                <span class="menu__title">
-                                    دسته بندی کالا
-                                </span>
-                            </a>
-                        </li>
-                        <li class="line">
-                            <span class="line-h"></span>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span class="menu__image">
-                                    <img src="./assets/images/header/fire.png" alt="up seller">
-                                </span>
-                                <span class="menu__title">
-                                    پرفروش ترین کالاها
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span class="menu__image">
-                                    <img src="./assets/images/header/percent.png" alt="percent">
-                                </span>
-                                <span class="menu__title">
-                                    تخفیف ها و پیشنهاد ها
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span class="menu__image">
-                                    <img src="./assets/images/header/percent-2.png" alt="percent">
-                                </span>
-                                <span class="menu__title">
-                                    شگفت انگیزها
-                                </span>
-                            </a>
-                        </li>
-                        <li class="line">
-                            <span class="line-h"></span>
-                        </li>
-                        <li>
-                            <a href="#">سوالی دارید ؟</a>
-                        </li>
-                        <li>
-                            <a href="#">! فروشنده شوید</a>
-                        </li>
-
-                    </ul>
-                </nav>
+               
             </div>
         </div> -->
-
         <!-- header mobile -->
         <div class="header mobile">
             <section class="header__top">
@@ -134,7 +79,7 @@
             <div class="line"></div>
             <section class="header__location">
                 <div class="title">
-                    <img src="./assets/images/header/location.gif" alt="location">
+                    <img src="./assets/images/header/location.png" alt="location">
                     <span>لطفا شهر خود را انتخاب کنید</span>
                 </div>
                 <div class="icon">
@@ -142,10 +87,133 @@
                 </div>
             </section>
 
+            <nav>
+                <div class="menu">
+                    <span class="logo">
+                        <img src="./assets/images/header/logo-mobile-menu.png" alt="logo">
+                    </span>
+                    
+                    <div class="line"></div>
+
+                    <ul class="single">
+                        <li>
+                            <a href="#">
+                                <span class="menu__image">
+                                    <img src="./assets/images/header/fire.png" alt="up seller">
+                                </span>
+                                <span class="menu__title">
+                                    پرفروش ترین ها
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="menu__image">
+                                    <img src="./assets/images/header/percent.png" alt="percent">
+                                </span>
+                                <span class="menu__title">
+                                    تخفیف ها و پیشنهاد ها
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="menu__image">
+                                    <img src="./assets/images/header/percent-2.png" alt="percent">
+                                </span>
+                                <span class="menu__title">
+                                    شگفت انگیزها
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="menu__image">
+                                    <img src="./assets/images/header/question.png" alt="question">
+                                </span>
+                                <span class="menu__title">
+                                     سوالی دارید ؟
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="menu__image">
+                                    <img src="./assets/images/header/store.png" alt="store">
+                                </span>
+                                <span class="menu__title">
+                                     فروشنده شوید !
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    
+                    <div class="line"></div>
+
+                    
+                    <h3 class="title-sort">
+                            <a href="#">
+                                <span class="sort__icon">
+                                    <img src="./assets/images/header/hamburger.png" alt="hamburger">
+                                </span>
+                                <span class="sort__title">
+                                    دسته بندی کالاها
+                                </span>
+                            </a>
+                    </h3>
+                    <ul class="sort">
+                        <li>
+                            <a href="#">
+                                <span class="items-title">کالای دیجیتال</span>
+                                <span class="icon">
+                                    <img src="./assets/images/header/chevron-down.png" alt="chevron down icon">
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="items-title">خودرود و ابزار تجهیزات صنعتی</span>
+                                <span class="icon">
+                                    <img src="./assets/images/header/chevron-down.png" alt="chevron down icon">
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="items-title">مد و پوشاک</span>
+                                <span class="icon">
+                                    <img src="./assets/images/header/chevron-down.png" alt="chevron down icon">
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="items-title">اسباب بازی کودک و نوزاد</span>
+                                <span class="icon">
+                                    <img src="./assets/images/header/chevron-down.png" alt="chevron down icon">
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </nav>
         </div>
+
+        <script>
+            
+            $('.hamburger').click(function(){
+                $('nav').fadeIn(100);
+                
+            })
+
+            
+        </script>
         <!-- End header mobile -->
-        
     </header>
+
+
+    
     <main>
         <div class="main container"></div>
     </main>

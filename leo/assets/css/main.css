@@ -20,7 +20,7 @@ ul {
 
 a {
   text-decoration: none;
-  color: #4444;
+  color: #3d3d3d;
 }
 
 html {
@@ -49,6 +49,7 @@ body {
 header .header {
   margin: 0 auto;
   padding: .5rem 1.1rem;
+  position: relative;
 }
 
 header .header__top {
@@ -140,6 +141,7 @@ header .header__bottom .other__sign {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
 }
 
 header .header__bottom .other__sign img {
@@ -154,6 +156,7 @@ header .header__bottom .other__sign .sign__title {
 
 header .header__bottom .other__basket {
   margin-right: 20px;
+  cursor: pointer;
 }
 
 header .header__location {
@@ -181,8 +184,8 @@ header .header__location .title {
 }
 
 header .header__location .title img {
-  width: 20px;
-  height: 15px;
+  width: 25px;
+  height: 20px;
 }
 
 header .header__location .title span {
@@ -201,6 +204,92 @@ header .header__location .icon {
 header .header__location .icon img {
   width: 10px;
   height: 10px;
+}
+
+header .header nav {
+  background-color: white;
+  width: 320px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  border: 1px solid #ccc;
+  z-index: 3;
+  overflow-y: auto;
+  display: none;
+}
+
+header .header nav .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem 2rem;
+}
+
+header .header nav .menu .logo {
+  padding: 1rem 0;
+}
+
+header .header nav .menu .logo img {
+  width: 80px;
+  height: 20px;
+}
+
+header .header nav .menu ul.single li {
+  padding: 2rem 0;
+}
+
+header .header nav .menu ul.single li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #000;
+}
+
+header .header nav .menu ul.single li a .menu__image {
+  margin-left: 1rem;
+}
+
+header .header nav .menu ul.single li a .menu__image img {
+  width: 25;
+  height: 25px;
+  opacity: .4;
+}
+
+header .header nav .menu .title-sort {
+  margin: 3rem 0;
+}
+
+header .header nav .menu .title-sort a .sort__icon {
+  display: none;
+}
+
+header .header nav .menu ul.sort li {
+  margin-bottom: 2.5rem;
+}
+
+header .header nav .menu ul.sort li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .header nav .menu ul.sort li a .icon img {
+  width: 15px;
+  height: 15px;
 }
 
 header .header.desktop {

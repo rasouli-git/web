@@ -1,8 +1,10 @@
 header{
+    
 
     .header{
         margin: 0 auto;
         padding: .5rem 1.1rem;
+        position: relative;
 
         &__top{
                 margin: 1rem 1rem;
@@ -67,6 +69,7 @@ header{
                 &__sign{
                     display: flex;
                     align-items: center;
+                    cursor: pointer;
                     
                     img{
                         width: 25px;
@@ -80,6 +83,7 @@ header{
                 }
                 &__basket{
                     margin-right: 20px;
+                    cursor: pointer;
 
                 }
                 
@@ -100,8 +104,8 @@ header{
                 font-size: 1.1rem;
 
                 img{
-                    width: 20px;
-                    height: 15px;
+                    width: 25px;
+                    height: 20px;
                 }
                 span{
                     margin-right: 6px;
@@ -118,7 +122,92 @@ header{
             }
         }
         
+        nav{
+            background-color: white;
+            width: 320px;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            right: 0;
+            border: 1px solid #ccc;
+            z-index: 3;
+            overflow-y: auto;
+            display: none;
+
+            .menu{
+                display: flex;
+                flex-direction: column;
+                padding: 1rem 2rem;
+
+                .logo{
+                    padding: 1rem 0;
+
+                    img{
+                        width: 80px;
+                        height: 20px;
+                    }
+                }
+                ul.single{
+
+                    li{
+                        padding: 2rem 0;
+
+                       
+
+                        a{
+                            display: flex;
+                            align-items: center;
+                            color: #000;
+
+                            .menu__image{
+                                margin-left: 1rem;
+
+                                img{
+                                    width: 25;
+                                    height: 25px;
+                                    opacity: .4;
+                                }
+                            }
+                        }
+                    }
+                }
+                .title-sort{
+                    margin: 3rem 0;
+                    a{
+
+                        .sort__icon{
+                            display: none;
+                        }
+                        .sort-title{}
+                    }
+                }
+                ul.sort{
+
+                    li{
+                        margin-bottom: 2.5rem;
+                                
+                        a{
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+
+                            
+                            .icon{
+
+                                img{
+                                    width: 15px;
+                                    height: 15px;
+                                }
+                            }
+                        }
+                    } 
+                }
+            }
+        }
     }
+
+    
+
     .header.desktop{
         display: none;
     }
