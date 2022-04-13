@@ -316,11 +316,17 @@ header{
                         li{
                             padding: 0;
                             margin-left: .5rem;
+
+                            .line{
+                                display: unset;
+                            }
                             a{
 
                                 .menu__image{
                                     margin-left: .5rem;
                                     margin-right: 1rem;
+
+                                    
                                 }
                             }
                         }

@@ -418,6 +418,9 @@ header .header.desktop {
     padding: 0;
     margin-left: .5rem;
   }
+  header .header nav .menu ul.single li .line {
+    display: unset;
+  }
   header .header nav .menu ul.single li a .menu__image {
     margin-left: .5rem;
     margin-right: 1rem;
