@@ -79,6 +79,13 @@ header{
                     .sign__title{
                         margin-right: 8px;
                         font-weight: 500;
+                        
+                        .line{
+                            display: none;
+                        }
+                        .desktop{
+                            display: none;
+                        }
                     }
                 }
                 &__basket{
@@ -234,13 +241,119 @@ header{
 
                 .search{
                     min-width: 600px;
+                    span{
+                        font-size: 1.4rem;
+                    }
+                }
+                .other{
+                    
+                    &__sign{
+                        border: 1px solid #eee;
+                        border-radius: 8px;
+                        padding: 1.1rem 2rem;
+
+                        .sign__title{
+                            font-size: 1.4rem;
+
+                            .line{
+                                display: inline;
+                            }
+                            .desktop{
+                                display: inline-block;
+                            }
+                        }
+                    }
+                }
+            }
+            &__location{
+                order: 2;
+                flex-basis: 19%;
+                justify-content: flex-end;
+
+                .title{
+                    font-size: 1.3rem;
+
+                    img{
+                        width: 27px;
+                        height: 25px;
+                    }
+                }
+                .icon{
+                    display: none !important;
+                    
+                    img{
+                        display: none;
+                    }
+                    span{
+                        margin-right: unset;
+                    }
+                }
+            }
+            nav{
+                display: flex;
+                position: unset;
+                width: unset;
+                height: unset;
+                border: unset;
+                order: 1;
+                flex-basis: 79%;
+
+                .menu{
+                    display: flex;
+                    align-items: center;
+                    flex-direction: row;
+                    padding: 1rem 1rem;
+
+                    .logo{
+                        display: none;
+                    }
+                    ul.single{
+                        display: flex;
+                        align-items: center;
+                        order: 2;
+                        margin: 0;
+
+                        li{
+                            padding: 0;
+                            margin-left: .5rem;
+                            a{
+
+                                .menu__image{
+                                    margin-left: .5rem;
+                                    margin-right: 1rem;
+                                }
+                            }
+                        }
+
+                        
+                    }
+                    .sort{
+                        order: 1;
+                    }
+
+                    .title-sort{
+                        margin: 3rem 0;
+                        a{
+                            display: flex;
+                            align-items: center;
+    
+                            .sort__icon{
+                                display: unset;
+                                margin-left: 1rem;
+                            }
+                        }
+                    }
+                }
+
+                
+                ul.sort{
+                    display: none;
                 }
             }
 
         }
-        .line{
-            display: none;
-        }
+        
+        .line{display: none;}
     }
     
 }
