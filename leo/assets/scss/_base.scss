@@ -1,0 +1,43 @@
+@font-face{
+    font-family: 'yekan';
+    font-style: normal;
+    src: url(../fonts/iranyekanwebregular.e31c09af.woff2) format('woff'),
+    url(../fonts/iranyekanwebmedium.2d4f96e5.woff) format('woff'),
+    url(../fonts/iranyekanwebbold.cfb6e26c.woff2) format('woff'),
+    url(../fonts/iranyekanwebextrabold.9346e9a2.woff) format('woff');
+    ;
+}
+
+*::before,
+*::after,
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: #4444;
+}
+
+html{
+    font-size: 62.5%;
+    direction: rtl;
+}
+body{
+    font-size: 1.3rem;
+    font-family: 'yekan';
+    font-weight: normal;
+}
+hr{
+    color: #f2f2f23d;
+}
+
+.container{
+    max-width: 1360px;
+    margin: 0 auto;
+}
