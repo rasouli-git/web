@@ -29,7 +29,7 @@ html {
 }
 
 body {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-family: 'yekan';
   font-weight: normal;
 }
@@ -93,7 +93,7 @@ header .header__bottom {
 }
 
 header .header__bottom .search {
-  min-width: 68%;
+  min-width: 59%;
   padding: 1.1rem 2rem;
   color: #81858b;
   background-color: #f0f0f1;
@@ -147,12 +147,13 @@ header .header__bottom .other__sign img {
   height: 20px;
 }
 
-header .header__bottom .other__sign__title {
-  margin-right: 5px;
+header .header__bottom .other__sign .sign__title {
+  margin-right: 8px;
+  font-weight: 500;
 }
 
 header .header__bottom .other__basket {
-  margin-right: 10px;
+  margin-right: 20px;
 }
 
 header .header__location {
@@ -175,6 +176,8 @@ header .header__location .title {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: #3d3d3d;
+  font-size: 1.1rem;
 }
 
 header .header__location .title img {
@@ -183,7 +186,7 @@ header .header__location .title img {
 }
 
 header .header__location .title span {
-  margin-right: 20px;
+  margin-right: 6px;
 }
 
 header .header__location .icon {
@@ -196,8 +199,8 @@ header .header__location .icon {
 }
 
 header .header__location .icon img {
-  width: 18px;
-  height: 14px;
+  width: 10px;
+  height: 10px;
 }
 
 header .header.desktop {

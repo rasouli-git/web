@@ -34,7 +34,7 @@ header{
             justify-content: space-between;
 
             .search{
-                min-width: 68%;
+                min-width: 59%;
                 padding: 1.1rem 2rem;
                 color: #81858b;
                 background-color: #f0f0f1;
@@ -73,12 +73,13 @@ header{
                         height: 20px;
                     }
 
-                    &__title{
-                        margin-right: 5px;
+                    .sign__title{
+                        margin-right: 8px;
+                        font-weight: 500;
                     }
                 }
                 &__basket{
-                    margin-right: 10px;
+                    margin-right: 20px;
 
                 }
                 
@@ -95,13 +96,15 @@ header{
             .title{
                 display: flex;
                 align-items: center;
+                color: #3d3d3d;
+                font-size: 1.1rem;
 
                 img{
                     width: 20px;
                     height: 15px;
                 }
                 span{
-                    margin-right: 20px;
+                    margin-right: 6px;
                 }
             }
             .icon{
@@ -109,8 +112,8 @@ header{
                 align-items: center;
 
                 img{
-                    width: 18px;
-                    height: 14px;
+                    width: 10px;
+                    height: 10px;
                 }
             }
         }
