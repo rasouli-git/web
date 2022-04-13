@@ -93,7 +93,7 @@ a {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 1.3rem 1.2rem;
+  padding: .7rem 1.2rem;
 }
 
 .header .nav .logo {
@@ -138,6 +138,12 @@ a {
   padding: .5rem 1rem;
   text-align: center;
   display: none;
+}
+
+.header .nav .menu.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .header .nav .menu li {
@@ -272,6 +278,8 @@ a {
     -webkit-transition: all .4s ease-out;
     transition: all .4s ease-out;
     text-align: right;
+    color: #fff;
+    outline: 0;
   }
   .hero-1__right .desktop .btn.send-link {
     padding: .7rem 2.5rem;
@@ -285,9 +293,17 @@ a {
     padding: 1rem 1rem;
     border: 1px solid #eee;
     margin-top: 3rem;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
   }
   .hero-1__right .desktop .btn.intro-link a {
     color: #fff;
+  }
+  .hero-1__right .desktop .btn.intro-link:hover {
+    background-color: #fff;
+  }
+  .hero-1__right .desktop .btn.intro-link:hover a {
+    color: #21aa58;
   }
   .hero-1__right .mobile {
     display: none;

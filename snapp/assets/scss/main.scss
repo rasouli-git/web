@@ -11,7 +11,7 @@
         justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
-        padding: 1.3rem 1.2rem;
+        padding: .7rem 1.2rem;
 
         .logo{
             order: 2;
@@ -45,6 +45,10 @@
             padding: .5rem 1rem;
             text-align: center;
             display: none;
+
+            &.active{
+                display: flex;
+            }
 
             li{
                 border-bottom: 1px solid #eee;
@@ -176,6 +180,8 @@ flex-direction: column;
                     margin-left: 2rem;
                     transition: all .4s ease-out;
                     text-align: right;
+                    color: $white-color;
+                    outline: 0;
 
                 }
                 .btn.send-link{
@@ -188,9 +194,18 @@ flex-direction: column;
                     padding: 1rem 1rem;
                     border: 1px solid #eee;
                     margin-top: 3rem;
+                    transition: all .4s ease-in-out;
                     
                     a{
                         color: $white-color;
+                    }
+                    &:hover{
+                        background-color: #fff;
+
+                        a{
+                            
+                            color: $bg-primary-color;
+                        }
                     }
                 }
             }
@@ -671,3 +686,4 @@ footer{
     }
     
 }
+
