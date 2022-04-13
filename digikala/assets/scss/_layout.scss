@@ -178,7 +178,6 @@ header{
                         .sort__icon{
                             display: none;
                         }
-                        .sort-title{}
                     }
                 }
                 ul.sort{
@@ -211,4 +210,37 @@ header{
     .header.desktop{
         display: none;
     }
+}
+
+@media screen and (min-width:1024px) {
+    header{
+        
+        .header{
+            display: flex;
+            flex-wrap: wrap;
+
+            &__top{
+                flex-basis: 10%;
+
+                .hamburger{
+                    display: none;
+                }
+                .question{
+                    display: none;
+                }
+            }
+            &__bottom{
+                flex-basis: 86%;
+
+                .search{
+                    min-width: 600px;
+                }
+            }
+
+        }
+        .line{
+            display: none;
+        }
+    }
+    
 }

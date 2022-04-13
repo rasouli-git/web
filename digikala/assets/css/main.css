@@ -295,4 +295,34 @@ header .header nav .menu ul.sort li a .icon img {
 header .header.desktop {
   display: none;
 }
+
+@media screen and (min-width: 1024px) {
+  header .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  header .header__top {
+    -ms-flex-preferred-size: 10%;
+        flex-basis: 10%;
+  }
+  header .header__top .hamburger {
+    display: none;
+  }
+  header .header__top .question {
+    display: none;
+  }
+  header .header__bottom {
+    -ms-flex-preferred-size: 86%;
+        flex-basis: 86%;
+  }
+  header .header__bottom .search {
+    min-width: 600px;
+  }
+  header .line {
+    display: none;
+  }
+}
 /*# sourceMappingURL=main.css.map */
