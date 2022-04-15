@@ -130,6 +130,7 @@ header .header__bottom .search .search__intro {
   background-color: white;
   cursor: default;
   z-index: 2;
+  display: none;
 }
 
 header .header__bottom .search .search__intro-input {
