@@ -130,7 +130,6 @@ header .header__bottom .search .search__intro {
   background-color: white;
   cursor: default;
   z-index: 2;
-  display: none;
 }
 
 header .header__bottom .search .search__intro-input {
@@ -224,6 +223,75 @@ header .header__bottom .search .search__intro-slider .slider-x__item a .item-det
   overflow: hidden;
   text-overflow: ellipsis;
   font-size: 1rem;
+}
+
+header .header__bottom .search .search__intro__search-top .search-top__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .header__bottom .search .search__intro__search-top .search-top__title .image-icon {
+  margin-left: 20px;
+}
+
+header .header__bottom .search .search__intro__search-top .search-top__title .image-icon img {
+  width: 20px;
+  height: 20px;
+}
+
+header .header__bottom .search .search__intro__search-top .search-top__title h3 {
+  color: #000;
+  font-size: 1.2rem;
+}
+
+header .header__bottom .search .search__intro__search-top .search-top__slider .slider-x {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow-x: auto;
+  scrollbar-width: none;
+  margin: 2rem 0;
+}
+
+header .header__bottom .search .search__intro__search-top .search-top__slider .slider-x li {
+  min-width: 150px;
+  border: 1px solid #eee;
+  margin-left: 4px;
+  border-radius: 16px;
+  padding: .7rem 1rem;
+}
+
+header .header__bottom .search .search__intro__search-top .search-top__slider .slider-x li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .header__bottom .search .search__intro__search-top .search-top__slider .slider-x li a .icon {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  margin: 10px;
+}
+
+header .header__bottom .search .search__intro__search-top .search-top__slider .slider-x li a .icon img {
+  width: 100%;
+  height: 100%;
 }
 
 header .header__bottom .other {

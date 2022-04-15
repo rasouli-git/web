@@ -68,7 +68,7 @@ header{
                     background-color: white;
                     cursor: default;
                     z-index: 2;
-                    display: none;
+                    // display: none;
 
 
                     
@@ -152,6 +152,67 @@ header{
                                             overflow: hidden;
                                             text-overflow: ellipsis;
                                             font-size: 1rem;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    &__search-top{
+
+                        .search-top{
+
+                            &__title{
+                                display: flex;
+                                align-items: center;
+
+                                .image-icon{
+                                    margin-left: 20px;
+
+                                    img{
+                                        width: 20px;
+                                        height: 20px;
+                                    }
+                                }
+                                h3{
+                                    color: #000;
+                                    font-size: 1.2rem;
+                                }
+                            }
+                            &__slider{
+
+                                .slider-x{
+                                    display: flex;
+                                    flex-wrap: nowrap;
+                                    align-items: center;
+                                    overflow-x: auto;
+                                    scrollbar-width: none;
+                                    margin: 2rem 0;
+
+                                    li{
+                                        min-width: 150px;
+                                        border: 1px solid #eee;
+                                        margin-left: 4px;
+                                        border-radius: 16px;
+                                        padding: .7rem 1rem;
+
+                                        a{
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: space-between;
+
+                                            // .detail{}
+                                            .icon{
+                                                width: 10px;
+                                                height: 10px;
+                                                display: inline-block;
+                                                margin: 10px;
+                                                img{
+                                                    width: 100%;
+                                                    height: 100%;
+                                                }
+                                            }
                                         }
                                     }
                                 }
