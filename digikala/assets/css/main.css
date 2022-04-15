@@ -104,12 +104,12 @@ header .header__bottom .search {
   cursor: pointer;
 }
 
-header .header__bottom .search span {
+header .header__bottom .search > span {
   margin-right: 2.5rem;
   color: #81858b;
 }
 
-header .header__bottom .search img {
+header .header__bottom .search > img {
   position: absolute;
   top: 50%;
   right: 10px;
@@ -118,6 +118,112 @@ header .header__bottom .search img {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   opacity: .6;
+}
+
+header .header__bottom .search .search__intro {
+  width: 100%;
+  height: 100vh;
+  padding: 1rem 2rem;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: white;
+  cursor: default;
+  z-index: 2;
+  display: none;
+}
+
+header .header__bottom .search .search__intro-input {
+  border-bottom: 1px solid #1693c0;
+  padding: 1rem 0;
+  position: relative;
+}
+
+header .header__bottom .search .search__intro-input input {
+  width: 100%;
+  padding: 0 2.5rem;
+  border: 0;
+  outline: 0;
+  color: #81858b;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+header .header__bottom .search .search__intro-input .control-icon {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+header .header__bottom .search .search__intro-input .control-icon img {
+  width: 20px;
+  height: 20px;
+}
+
+header .header__bottom .search .search__intro-input .control-icon.icon-exit {
+  left: 0;
+}
+
+header .header__bottom .search .search__intro-input .control-icon.icon-search {
+  right: 0;
+}
+
+header .header__bottom .search .search__intro-slider .slider-x {
+  padding: 2rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+header .header__bottom .search .search__intro-slider .slider-x__item {
+  border: 1px solid #eee;
+  border-radius: 8px;
+  margin-left: 5px;
+}
+
+header .header__bottom .search .search__intro-slider .slider-x__item a {
+  display: block;
+  padding: 1rem 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .header__bottom .search .search__intro-slider .slider-x__item a .item-image {
+  width: 60px;
+  height: 60px;
+  margin-left: 20px;
+}
+
+header .header__bottom .search .search__intro-slider .slider-x__item a .item-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+}
+
+header .header__bottom .search .search__intro-slider .slider-x__item a .item-detail h4 {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+header .header__bottom .search .search__intro-slider .slider-x__item a .item-detail span {
+  width: 120px;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 1rem;
 }
 
 header .header__bottom .other {

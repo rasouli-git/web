@@ -29,6 +29,53 @@
                 <div class="search">
                     <span>جستجو</span>
                     <img src="./assets/images/header/search.png" alt="search">
+                    
+                    <div class="search__intro">
+                        
+                        <section class="search__intro-input">
+                            <span class="control-icon icon-exit">
+                                <img src="./assets/images/header/icons-left-24.png" alt="">
+                            </span>
+                            <input type="text" placeholder="جستجو">
+                            <span class="control-icon icon-search">
+                                <img src="./assets/images/header/search.png" alt="">
+                            </span>
+                        </section>
+                        <section class="search__intro-slider">
+                            <ul class="slider-x">
+                                <li class="slider-x__item">
+                                    <a href="#">
+                                        <div class="item-image">
+                                            <img src="./assets/images/header/slider-1.jpg" alt="">
+                                        </div>
+                                        <div class="item-detail">
+                                            <h4>گوشی آیفون</h4>
+                                            <span>
+                                                با تخفیف ویژه تحویل بگیرید
+                                                با تخفیف ویژه تحویل بگیرید
+
+                                            </span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="slider-x__item">
+                                    <a href="#">
+                                        <div class="item-image">
+                                            <img src="./assets/images/header/slider-2.jpg" alt="">
+                                        </div>
+                                        <div class="item-detail">
+                                            <h4>گوشی سامسونگ</h4>
+                                            <span>
+                                                با تخفیف ویژه تحویل بگیرید
+                                                با تخفیف ویژه تحویل بگیرید
+
+                                            </span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </section>
+                    </div>
                 </div>
                 <div class="other">
                     <span class="other__sign">
@@ -45,6 +92,8 @@
                 </div>
                 
             </section>
+            
+
             <div class="line"></div>
 
 
@@ -174,15 +223,6 @@
 
         </div>
 
-        <script>
-            
-            $('.hamburger').click(function(){
-                $('nav').fadeIn(100);
-                
-            })
-
-            
-        </script>
         <!-- End header mobile -->
     </header>
 
@@ -194,5 +234,23 @@
     <footer>
         <div class="footer container"></div>
     </footer>
+
+    
+    <script>
+            
+        $('.hamburger').click(function(){
+            $('nav').fadeIn(100);
+            
+        })
+
+        $('.search').click(function(){
+            $('.search__intro').slideDown(0);
+        })
+        $('.icon-exit').click(function(){
+            $('.search__intro').slideDown(0);
+        })
+
+        
+    </script>
 </body>
 </html>

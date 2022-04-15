@@ -45,11 +45,11 @@ header{
                 position: relative;
                 cursor: pointer;
 
-                span{
+                & > span{
                     margin-right: 2.5rem;
                     color: #81858b;
                 }
-                img{
+                & >img{
                     position: absolute;
                     top: 50%;
                     right: 10px;
@@ -58,6 +58,110 @@ header{
                     transform: translateY(-50%);
                     opacity: .6;
                 }
+                .search__intro{
+                    width: 100%;
+                    height: 100vh;
+                    padding: 1rem 2rem;
+                    position: fixed;
+                    top: 0;
+                    right: 0;
+                    background-color: white;
+                    cursor: default;
+                    z-index: 2;
+                    display: none;
+
+                    
+                    &-input{
+                        border-bottom: 1px solid #1693c0;
+                        padding: 1rem 0;
+                        position: relative;
+
+                        input{
+                            width: 100%;
+                            padding: 0 2.5rem ;
+                            border: 0;
+                            outline: 0;
+                            color: #81858b;
+                            font-size: 1.2rem;
+                            cursor: pointer;
+                        }
+
+                        .control-icon{
+                            width: 20px;
+                            height: 20px;
+                            position: absolute;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            img{
+                                width: 20px;
+                                height: 20px;
+                            }
+
+                            &.icon-exit{
+                                left: 0;
+                            }
+                            &.icon-search{
+                                right: 0;
+                            }
+
+                        }
+                    }
+
+                    &-slider{
+
+                        .slider-x{
+                            padding: 2rem 0;
+                            display: flex;
+                            align-items: center;
+                            overflow-x: auto;
+                            scrollbar-width: none;
+
+                            &__item{
+                                border: 1px solid #eee;
+                                border-radius: 8px;
+                                margin-left: 5px;
+
+                                a{
+                                    display: block;
+                                    padding: 1rem 2rem;
+                                    display: flex;
+                                    align-items: center;
+
+
+                                    .item-image{
+                                        width: 60px;
+                                        height: 60px;
+                                        margin-left: 20px;
+
+                                        img{
+                                            width: 100%;
+                                            height: 100%;
+                                            border-radius: 4px;
+                                        }
+                                    }
+                                    .item-detail{
+                                        h4{
+                                            margin-bottom: 10px;
+                                            font-size: 1.1rem;
+                                        }
+                                        span{
+                                            width: 120px;
+                                            display: block;
+                                            white-space: nowrap;
+                                            overflow: hidden;
+                                            text-overflow: ellipsis;
+                                            font-size: 1rem;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+
+                    
+                }
+
             }
             .other{
                 display: flex;
@@ -210,6 +314,8 @@ header{
                 }
             }
         }
+
+        
     }
 
     
@@ -326,7 +432,7 @@ header{
                                     margin-left: .5rem;
                                     margin-right: 1rem;
 
-                                    
+                                     
                                 }
                             }
                         }
