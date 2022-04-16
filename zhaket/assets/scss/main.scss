@@ -1,0 +1,118 @@
+@import 'base';
+
+
+
+// header 
+
+header{
+    border-top: 3px solid $primary-color;
+    box-shadow: 0 20px 30px 10px #eee;
+
+    .header{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        nav{
+            display: flex;
+            align-items: center;
+            position: relative;
+
+            .hamburger{
+
+                .bar{
+                    width: 28px;
+                    height: 4px;
+                    border-radius: 20px;
+                    background-color: $black-color;
+                    margin-bottom: 4px;
+                    display: block;
+                }
+            }
+
+            .header__menu{
+                width: 75%;
+                padding: 0 2rem;
+                height: 100vh;
+                position: fixed;
+                top: 0;
+                right: 0;
+                background-color: $white-color;
+                border-top: 3px solid $primary-color;
+                border-left: 1px solid $border-color;
+                display: flex;
+                flex-direction: column;
+                background-color: $primary-color;
+                display: none;
+
+                .item-search{
+                    padding: 2rem 1rem ;
+                    
+                    a{
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+
+                        .item-search-box{
+                            position: relative;
+                            span{
+                                font-size: 1.8rem;
+                                color: $dark-color;
+                                position: absolute;
+                                right: 8px;
+                                top: 50%;
+                                transform: translateY(-50%);
+                                display: block;
+
+                            }
+                            input{
+                                padding: 1rem 4rem ;
+                                border-radius: 8px;
+                                font-size: 1.2rem;
+                                border: 0;
+                                outline: 0;
+                            }
+                        }
+                        .item-search-icon{
+                            font-size: 2rem
+                        }
+
+                    }
+                }
+
+                .menu__item{
+                    margin: 2rem 0;
+                    border-bottom: 1px solid $border-color;
+                    width: 100%;
+
+                    a{
+                        padding: 1rem 2rem;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        color: $white-color;
+                    }
+                }
+
+            }
+        }
+
+    }
+
+    .header__sign{
+        display: flex;
+        align-items: center;
+
+        img{
+            width: 27px;
+            height: 27px;
+            margin-right: 1.5rem;
+        }
+        span{
+            margin-right: .5rem;
+        }
+        
+    }
+}
+
+// end header 

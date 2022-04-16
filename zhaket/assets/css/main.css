@@ -1,0 +1,198 @@
+*::before,
+*::after,
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+  direction: rtl;
+}
+
+@font-face {
+  font-family: 'iran-sans';
+  font-style: normal;
+  src: url(../fonts/IRANSansWeb.woff) format("woff"), url(../fonts/IRANSansWeb_Medium.woff) format("woff");
+}
+
+body {
+  font-size: 1.3rem;
+  font-family: 'iran-sans';
+}
+
+.container {
+  max-width: 1460px;
+  padding: 1rem 1.5rem;
+  margin: 0 auto;
+}
+
+.btn {
+  padding: .7rem 2rem;
+  border-radius: 4px;
+}
+
+.btn-primary {
+  background-color: #fea000;
+  color: white;
+}
+
+.w-line {
+  width: 2px;
+  height: 25px;
+  display: inline-block;
+  background-color: #4444;
+}
+
+header {
+  border-top: 3px solid #fea000;
+  -webkit-box-shadow: 0 20px 30px 10px #eee;
+          box-shadow: 0 20px 30px 10px #eee;
+}
+
+header .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+header .header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+header .header nav .hamburger .bar {
+  width: 28px;
+  height: 4px;
+  border-radius: 20px;
+  background-color: #000;
+  margin-bottom: 4px;
+  display: block;
+}
+
+header .header nav .header__menu {
+  width: 75%;
+  padding: 0 2rem;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #fff;
+  border-top: 3px solid #fea000;
+  border-left: 1px solid #eee;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #fea000;
+  display: none;
+}
+
+header .header nav .header__menu .item-search {
+  padding: 2rem 1rem;
+}
+
+header .header nav .header__menu .item-search a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .header nav .header__menu .item-search a .item-search-box {
+  position: relative;
+}
+
+header .header nav .header__menu .item-search a .item-search-box span {
+  font-size: 1.8rem;
+  color: #4444;
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  display: block;
+}
+
+header .header nav .header__menu .item-search a .item-search-box input {
+  padding: 1rem 4rem;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  border: 0;
+  outline: 0;
+}
+
+header .header nav .header__menu .item-search a .item-search-icon {
+  font-size: 2rem;
+}
+
+header .header nav .header__menu .menu__item {
+  margin: 2rem 0;
+  border-bottom: 1px solid #eee;
+  width: 100%;
+}
+
+header .header nav .header__menu .menu__item a {
+  padding: 1rem 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+}
+
+header .header__sign {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .header__sign img {
+  width: 27px;
+  height: 27px;
+  margin-right: 1.5rem;
+}
+
+header .header__sign span {
+  margin-right: .5rem;
+}
+/*# sourceMappingURL=main.css.map */

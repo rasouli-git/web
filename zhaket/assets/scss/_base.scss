@@ -1,0 +1,56 @@
+$primary-color: #fea000;
+$white-color: #fff;
+$border-color:#eee;
+$black-color:#000;
+$dark-color:#4444;
+
+*::before,
+*::after,
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 62.5%;
+    direction: rtl;
+}
+@font-face {
+    font-family: 'iran-sans';
+    font-style: normal;
+    src: url(../fonts/IRANSansWeb.woff) format('woff'),
+    url(../fonts/IRANSansWeb_Medium.woff) format('woff');
+}
+body{
+    font-size: 1.3rem;
+    font-family: 'iran-sans';
+}
+.container{
+    max-width: 1460px;
+    padding: 1rem 1.5rem;
+    margin: 0 auto;
+}
+.btn{
+    padding: .7rem 2rem ;
+    border-radius: 4px;
+}
+.btn-primary{
+    background-color: $primary-color;
+    color: white;
+}
+.w-line{
+    width: 2px;
+    height: 25px;
+    display: inline-block;
+    background-color: $dark-color;
+}
