@@ -1,6 +1,6 @@
 $('.hamburger').click(function(){
     $('.header__menu').fadeIn();
 })
-$('.item-search-icon').click(function(){
-    $('.header__menu').fadeOut();
+$('.header__menu').focusout(function(){
+    $(this).fadeOut();
 })
