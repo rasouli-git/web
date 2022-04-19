@@ -120,7 +120,7 @@ header .header nav .header__menu {
 }
 
 header .header nav .header__menu .item-search {
-  padding: 2rem 1rem;
+  padding: 2rem 0rem;
 }
 
 header .header nav .header__menu .item-search a {
