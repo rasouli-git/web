@@ -90,6 +90,21 @@ header{
                         align-items: center;
                         color: $white-color;
                     }
+                    .sub-menu{
+                        padding: 0 2rem;
+                        border-radius: 8px;
+                        background-color: $secondary-color;
+                        display: none;
+
+                        li{
+                            a{
+
+                                .icon{
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
                 }
 
             }
@@ -114,3 +129,88 @@ header{
 }
 
 // end header 
+
+
+//  header media query
+@media screen and (min-width:1050px) {
+    
+    header{
+        .header{
+
+            nav{
+
+                .hamburger{
+                    display: none;
+                }
+    
+                .header__menu{
+                    display: flex;
+                    flex-direction: row;
+                    width: unset;
+                    height: unset;
+                    background-color: unset;
+                    position: unset;
+                    padding: 0;
+                    border: unset;
+
+                    .item-search{
+                        display: none;
+                    }
+
+                    .menu__item{
+                        margin: 0;
+                        width: unset;
+                        border: unset;
+                        position: relative;
+                        transition: all 3s ease-out;
+                       
+                            &:hover .sub-menu{
+                                display: flex;
+                            }
+                       
+                        
+
+                        a{
+                            color: $black-color;
+                            padding: 1rem 1rem;
+
+                            .item-icon{
+                                font-size: .7rem;
+                                margin-right: 8px;
+                            }
+                        }
+                        
+                        .sub-menu{
+                            position: fixed;
+                            display: flex;
+                            right: 50%;
+                            top: 65px;
+                            transform: translateX(50%);
+                            width: 100%;
+                            background-color: white;
+                            padding: 1rem 2rem ;
+                            box-shadow: 0 6px 19px 0px #eee;
+                            flex-wrap: wrap;
+                            display: none;
+
+                            li{
+                                padding: 1rem 1rem;
+                                margin-left: 15px;
+
+                                a{
+                                    .icon{
+                                        display: inline-block;
+                                        margin-left: 8px;
+                                        font-size: 3rem;
+
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// end header media query

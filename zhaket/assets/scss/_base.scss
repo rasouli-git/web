@@ -1,8 +1,10 @@
 $primary-color: #fea000;
+$secondary-color: #f49600;
 $white-color: #fff;
 $border-color:#eee;
-$black-color:#000;
+$black-color:rgb(68, 68, 68);
 $dark-color:#4444;
+
 
 *::before,
 *::after,
@@ -53,4 +55,9 @@ body{
     height: 25px;
     display: inline-block;
     background-color: $dark-color;
+}
+
+.container{
+    max-width: 1460px;
+    margin: 0 auto;
 }
