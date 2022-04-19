@@ -263,6 +263,10 @@ header .header__bottom .search .search__intro__search-top .search-top__slider .s
   margin: 2rem 0;
 }
 
+header .header__bottom .search .search__intro__search-top .search-top__slider .slider-x::-webkit-scrollbar {
+  display: none;
+}
+
 header .header__bottom .search .search__intro__search-top .search-top__slider .slider-x li {
   min-width: 150px;
   border: 1px solid #eee;
@@ -448,17 +452,24 @@ header .header nav .menu ul.single li a .menu__image img {
 
 header .header nav .menu .title-sort {
   margin: 3rem 0;
+  position: relative;
 }
 
 header .header nav .menu .title-sort a .sort__icon {
   display: none;
 }
 
-header .header nav .menu ul.sort li {
+header .header nav .menu .sort {
+  font-weight: normal;
+  font-size: 1.2rem;
+  margin-top: 3rem;
+}
+
+header .header nav .menu .sort li {
   margin-bottom: 2.5rem;
 }
 
-header .header nav .menu ul.sort li a {
+header .header nav .menu .sort li a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -470,7 +481,7 @@ header .header nav .menu ul.sort li a {
           align-items: center;
 }
 
-header .header nav .menu ul.sort li a .icon img {
+header .header nav .menu .sort li a .icon img {
   width: 15px;
   height: 15px;
 }
@@ -506,6 +517,14 @@ header .header.desktop {
   }
   header .header__bottom .search span {
     font-size: 1.4rem;
+  }
+  header .header__bottom .search .search__intro {
+    position: absolute;
+    z-index: 4;
+    border: 1px solid #eee;
+  }
+  header .header__bottom .search .search__intro-input .control-icon.icon-exit {
+    display: none;
   }
   header .header__bottom .other__sign {
     border: 1px solid #eee;
@@ -560,6 +579,7 @@ header .header.desktop {
             order: 1;
     -ms-flex-preferred-size: 79%;
         flex-basis: 79%;
+    overflow-y: unset;
   }
   header .header nav .menu {
     display: -webkit-box;
@@ -604,9 +624,13 @@ header .header.desktop {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
+    display: unset;
+    position: absolute;
+    top: 5px;
+    right: 0;
   }
   header .header nav .menu .title-sort {
-    margin: 3rem 0;
+    margin: 0;
   }
   header .header nav .menu .title-sort a {
     display: -webkit-box;
@@ -626,5 +650,10 @@ header .header.desktop {
   header .line {
     display: none;
   }
+}
+
+main {
+  background-color: #cccc;
+  height: 100vh;
 }
 /*# sourceMappingURL=main.css.map */

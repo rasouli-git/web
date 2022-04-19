@@ -153,10 +153,6 @@ header .header nav .header__menu .item-search a .item-search-box input {
   outline: 0;
 }
 
-header .header nav .header__menu .item-search a .item-search-icon {
-  font-size: 2rem;
-}
-
 header .header nav .header__menu .menu__item {
   margin: 2rem 0;
   border-bottom: 1px solid #eee;

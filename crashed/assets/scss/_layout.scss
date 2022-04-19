@@ -190,6 +190,10 @@ header{
                                     scrollbar-width: none;
                                     margin: 2rem 0;
 
+                                    &::-webkit-scrollbar{
+                                        display: none;
+                                    }
+
                                     li{
                                         min-width: 150px;
                                         border: 1px solid #eee;
@@ -346,15 +350,20 @@ header{
                 }
                 .title-sort{
                     margin: 3rem 0;
+                    position: relative;
                     a{
 
                         .sort__icon{
                             display: none;
                         }
                     }
+                    
                 }
-                ul.sort{
+                .sort{
 
+                    font-weight: normal;
+                    font-size: 1.2rem;
+                    margin-top: 3rem;
                     li{
                         margin-bottom: 2.5rem;
                                 
@@ -412,6 +421,22 @@ header{
                     span{
                         font-size: 1.4rem;
                     }
+
+                    .search__intro{
+                        position: absolute;
+                        z-index: 4;
+                        border: 1px solid #eee;
+
+                        &-input{
+
+                            .control-icon{
+
+                                &.icon-exit{
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
                 }
                 .other{
                     
@@ -465,6 +490,7 @@ header{
                 border: unset;
                 order: 1;
                 flex-basis: 79%;
+                overflow-y: unset;
 
                 .menu{
                     display: flex;
@@ -503,10 +529,14 @@ header{
                     }
                     .sort{
                         order: 1;
+                        display: unset;
+                        position: absolute;
+                        top: 5px;
+                        right: 0;
                     }
 
                     .title-sort{
-                        margin: 3rem 0;
+                        margin: 0;
                         a{
                             display: flex;
                             align-items: center;
@@ -530,4 +560,10 @@ header{
         .line{display: none;}
     }
     
+}
+
+
+main{
+    background-color: #cccc;
+    height: 100vh;
 }
