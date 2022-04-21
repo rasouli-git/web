@@ -1,0 +1,92 @@
+/* header */
+header{
+    .banner{
+        height: 35px;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    &__hamburger{
+        font-size: 1.8rem;
+        color: $color-icon-high-emphasis;
+    }
+    &__logo{
+        text-align: center;
+
+        img{
+            width: 88%;
+            height: 90%;
+        }
+    }
+    &__question{
+        font-size: 1.8rem;
+        color: $color-icon-high-emphasis;
+    }
+    &__search{
+        display: flex;
+        flex-basis: 60%;
+        background-color: $color-neutral-100;
+        padding: 1.4rem 1rem;
+        border-radius: $border-radius;
+        color: $color-icon-low-emphasis;
+
+        span:first-child{
+            margin-left: 1rem;
+            font-size: 1.5rem;
+        }
+    }
+    &__sign{
+
+        .icon{
+            font-size: 2rem;
+            transform: rotate(180deg);
+            color: $color-icon-high-emphasis;
+        }
+        .sign-in{
+            margin-right: 1rem;
+        }
+        .sign-up{
+            display: none;
+        }
+    }
+    &__basket{
+        margin-right: 2rem;
+        span{
+            font-size: 1.8rem;
+            color: $color-icon-high-emphasis;
+        }
+    }
+
+    .nav__menu{
+        display: none;
+    }
+
+    &__location{
+        width: 100%;
+        justify-content: space-between;
+
+        .location__title{
+
+            .icon{
+                color: rgb(255, 124, 77);
+                margin-left: .5rem;
+                font-size: 1.5rem;
+            }
+        }
+        .icon{
+            color: $color-icon-high-emphasis;
+        }
+    }
+    .h-line{
+        display: none;
+    }
+}
+/* End header */
