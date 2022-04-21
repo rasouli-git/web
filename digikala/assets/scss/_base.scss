@@ -40,6 +40,7 @@ body{
 .container{
     max-width: 1460px;
     padding: 1.5rem 2rem;
+    margin: 0 auto;
 }
 
 .w-line{
@@ -52,9 +53,8 @@ body{
 
 .h-line{
     width: 1px;
-    height: 95%;
+    height: 60%;
     background-color: $color-neutral-100;
-    display: inline-block;
 
 }
 .flex{

@@ -90,3 +90,93 @@ header{
     }
 }
 /* End header */
+
+// header media query 
+@media screen and (min-width:1024px) {
+
+    header{
+        .banner{
+            height: 60px;
+        }
+    }
+    .header{
+
+        &__hamburger{
+            display: none;
+        }
+        &__question{
+            display: none;
+        }
+        &__search{
+        }
+        &__sign{
+            border: 1px solid $color-neutral-100;
+            padding: 1rem;
+            border-radius: $border-radius;
+
+            .sign-up{
+                display: inline-flex;
+                margin-right: 5px;
+            }
+        }
+        .nav__menu{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 2.5rem 0;
+
+                .main-menu{
+                    
+                    &__title{
+                        span{
+                            margin-left: 9px;
+                            font-size: 1.7rem;
+                        }
+                        h3{
+                            margin-left: 10px;
+                        }
+                    }
+
+                    
+                }
+                .main-menu-2{
+
+                    ul{
+                       
+                        li{
+                            margin-left: 1rem;
+
+                            a{
+                                .icon{
+                                    margin-left: 5px;
+                                }
+                            }
+                        }
+                    }
+                }
+        }
+        
+        &__location{
+            width: fit-content;
+
+            .location__title{
+                .icon{
+                    color: $color-neutral-500
+                }
+            }
+            & >.icon{
+                display: none;
+            }
+        }
+        .w-line{
+            display: none;
+        }
+        .h-line{
+            display: block;
+            margin: 0 1.5rem;
+            height: 20px;
+        }
+    }
+    
+}
+// end header media query 
