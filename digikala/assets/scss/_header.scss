@@ -1,5 +1,8 @@
 /* header */
 header{
+    background-color: $color-neutral-00;
+    position: sticky;
+    top: 0;
     .banner{
         height: 35px;
         img{
@@ -13,6 +16,7 @@ header{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-top: 1.3rem;
 
     &__hamburger{
         font-size: 1.8rem;
@@ -75,6 +79,7 @@ header{
     &__location{
         width: 100%;
         justify-content: space-between;
+        color: $color-neutral-700;
         cursor: pointer;
 
         .location__title{
@@ -135,7 +140,7 @@ header{
             display: flex;
             align-items: center;
             justify-content: center;
-            margin: 2.4rem 0;
+            margin-top: 2rem;
 
                 .main-menu{
                     cursor: pointer;

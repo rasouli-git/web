@@ -1,0 +1,109 @@
+/* slider */
+.slider{
+margin-top: 1rem;
+position: relative;
+    &__image{
+        overflow: hidden;
+        height: 268px;
+
+        &-item{
+
+            a{
+                display: block;
+
+                img{
+                    width: 100%;
+                    height: 268px;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+    &__chevron{
+        position: absolute;
+        bottom: 40px;
+        right: 30px;
+
+        .icon{
+            display: flex;
+            
+
+            &-right,&-left{
+                
+                width: 40px;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-left: 5px;
+                border: $color-neutral-300;
+                background-color: $color-neutral-00;
+                border-radius: 100%;
+                font-size: 1.3rem;
+            }
+        }
+    }
+    &__number{
+        position: absolute;
+        bottom: 10px;
+        left: 18px;
+        ul{
+            display: flex;
+            align-items: center;
+            
+            li{
+                width: 4px;
+                height: 4px;
+                border-radius: 100%;
+                background-color: $color-neutral-900;
+                margin-left: 8px;
+
+                &.active{
+                    width: 18px;
+                    height: 6px;
+                    background-color: $color-neutral-00;
+                    border-radius: 8px;
+                }
+            }
+        }
+    }
+}
+/* End slider */
+
+/*slider media query*/
+@media screen and (min-width:1024px) {
+    .slider{
+        margin-top: unset;
+        transition: all 2s ease-out .8s;
+
+        &:hover &__chevron{
+            display: block;
+        }
+
+        &__image{
+            height: 400px;
+
+            &-item{
+
+                a{
+                    img{
+                        height: 400px;
+                        object-fit: unset;
+                    }
+                }
+            }
+        }
+        &__chevron{
+            right: 50px;
+            bottom: 50px;
+            display: none;
+            transition: all 2s ease .8s;
+        }
+        &__number{
+            right: 50px;
+            bottom: 20px;
+        }
+    }
+    
+}
+/*end slider media query*/

@@ -1,8 +1,11 @@
 $color-neutral-00: #fff;
 $color-neutral-100: #f0f0f1;
+$color-neutral-300: #c0c2c5;
 $color-neutral-500: #a1a3a8;
 $color-neutral-600: #62666d;
 $color-neutral-700: #424750;
+$color-neutral-900: #0c0c0c;
+
 
 $color-hover-header: #e6123d;
 
@@ -40,12 +43,12 @@ html{
     font-size: 62.5%;
 }
 body{
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-family: 'IranYekan';
 }
 .container{
     max-width: 1860px;
-    padding: 1.5rem 2rem;
+    padding: 0 2rem;
     margin: 0 auto;
 }
 
