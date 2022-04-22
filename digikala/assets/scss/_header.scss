@@ -37,6 +37,7 @@ header{
         padding: 1.4rem 1rem;
         border-radius: $border-radius;
         color: $color-icon-low-emphasis;
+        cursor: pointer;
 
         span:first-child{
             margin-left: 1rem;
@@ -44,6 +45,7 @@ header{
         }
     }
     &__sign{
+        cursor: pointer;
 
         .icon{
             font-size: 2rem;
@@ -58,6 +60,7 @@ header{
         }
     }
     &__basket{
+        cursor: pointer;
         margin-right: 2rem;
         span{
             font-size: 1.8rem;
@@ -72,11 +75,12 @@ header{
     &__location{
         width: 100%;
         justify-content: space-between;
+        cursor: pointer;
 
         .location__title{
 
             .icon{
-                color: rgb(255, 124, 77);
+                color: $color-icon-warning;
                 margin-left: .5rem;
                 font-size: 1.5rem;
             }
@@ -104,10 +108,18 @@ header{
         &__hamburger{
             display: none;
         }
+        &__logo{
+
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
         &__question{
             display: none;
         }
         &__search{
+            flex-basis: 68%;
         }
         &__sign{
             border: 1px solid $color-neutral-100;
@@ -123,18 +135,26 @@ header{
             display: flex;
             align-items: center;
             justify-content: center;
-            margin: 2.5rem 0;
+            margin: 2.4rem 0;
 
                 .main-menu{
+                    cursor: pointer;
                     
                     &__title{
+                        padding: .5rem 0;
                         span{
                             margin-left: 9px;
                             font-size: 1.7rem;
+                            color: $color-icon-high-emphasis;
                         }
                         h3{
                             margin-left: 10px;
+                            color: $color-neutral-700;
+                            font-weight: normal;
                         }
+                    }
+                    &:hover{
+                        border-bottom: 3px solid $color-hover-header
                     }
 
                     
@@ -144,12 +164,22 @@ header{
                     ul{
                        
                         li{
-                            margin-left: 1rem;
+                            margin-left: 2rem;
+                            padding: .5rem 0;
+                            cursor: pointer;
+
+                            &:hover{
+                                border-bottom: 3px solid $color-hover-header
+                            }
 
                             a{
+                                color: $color-neutral-600;
                                 .icon{
                                     margin-left: 5px;
                                 }
+                            }
+                            .h-line{
+                                margin: 0;
                             }
                         }
                     }
@@ -161,7 +191,10 @@ header{
 
             .location__title{
                 .icon{
-                    color: $color-neutral-500
+                    color: $color-neutral-700;
+                }
+                span{
+                    color: $color-neutral-700;
                 }
             }
             & >.icon{
@@ -180,3 +213,7 @@ header{
     
 }
 // end header media query 
+
+
+/* key frames*/
+/* end key frames*/
