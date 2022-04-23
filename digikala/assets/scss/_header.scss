@@ -1,9 +1,6 @@
 /* header */
 header{
-    background-color: $color-neutral-00;
-    position: sticky;
-    top: 0;
-    z-index: 2;
+    
     .banner{
         height: 35px;
         img{
@@ -106,6 +103,10 @@ header{
 @media screen and (min-width:1024px) {
 
     header{
+        background-color: $color-neutral-00;
+        position: sticky;
+        top: 0;
+        z-index: 2;
         .banner{
             height: 60px;
         }
