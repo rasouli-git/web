@@ -1,6 +1,8 @@
 $color-neutral-00: #fff;
 $color-neutral-100: #f0f0f1;
+$color-neutral-200: #e0e0e2;
 $color-neutral-300: #c0c2c5;
+$color-neutral-400: #a1a3a8;
 $color-neutral-500: #a1a3a8;
 $color-neutral-600: #62666d;
 $color-neutral-700: #424750;
@@ -48,6 +50,11 @@ body{
 }
 .container{
     max-width: 1860px;
+    padding: 0 2rem;
+    margin: 0 auto;
+}
+.hero-continer{
+    max-width: 1336px;
     padding: 0 2rem;
     margin: 0 auto;
 }

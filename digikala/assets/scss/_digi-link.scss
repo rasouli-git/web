@@ -1,0 +1,85 @@
+.digi-link{
+    margin: 2rem 0;
+
+    .link-list{
+        display: grid;
+        grid-template-columns: repeat(4,minmax(0,1fr));
+        gap: 20px;
+        padding: 2rem 0;
+
+        &__item{
+
+            a{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                color: $color-neutral-700;
+
+                img{
+                    width: 52px;
+                    height: 52px;
+                    margin-bottom: 10px;
+                }
+                
+            }
+        }
+        &__more{
+
+           a{
+               display: flex;
+               flex-direction: column;
+               align-items: center;
+               flex-wrap: nowrap;
+               color: $color-neutral-700;
+               .icon{
+                   width: 54px;
+                   height: 54px;
+                   border-radius: 100%;
+                   background-color: $color-neutral-100;
+                   margin-bottom: 10px;
+                   justify-content: center;
+
+                   span{
+                       width: 6px;
+                       height: 6px;
+                       display: inline-block;
+                       background-color: $color-neutral-400;
+                       margin: 0 .1rem;
+                       border-radius: 100%;
+                   }
+               }
+           }
+        }
+    }
+}
+
+/* digi-link media query*/
+@media screen and (max-width:350px) {
+    .digi-link{
+
+        .link-list{
+
+            &__item,&__more{
+
+                a{
+                    span{
+                        font-size: .9rem;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width:1024px){
+    .digi-link{
+
+        .link-list{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+    }
+    
+}
+/* End digi-link media query*/

@@ -3,6 +3,7 @@ header{
     background-color: $color-neutral-00;
     position: sticky;
     top: 0;
+    z-index: 2;
     .banner{
         height: 35px;
         img{
@@ -78,6 +79,7 @@ header{
 
     &__location{
         width: 100%;
+        margin-bottom: .7rem;
         justify-content: space-between;
         color: $color-neutral-700;
         cursor: pointer;
@@ -127,8 +129,8 @@ header{
             flex-basis: 68%;
         }
         &__sign{
-            border: 1px solid $color-neutral-100;
-            padding: 1rem;
+            border: 1px solid $color-neutral-200;
+            padding: 1rem 1.5rem;
             border-radius: $border-radius;
 
             .sign-up{
@@ -193,8 +195,11 @@ header{
         
         &__location{
             width: fit-content;
+            margin-bottom: unset;
+            font-size: 1.2rem;
 
             .location__title{
+                margin-top: 1rem;
                 .icon{
                     color: $color-neutral-700;
                 }
