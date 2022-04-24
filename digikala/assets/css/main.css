@@ -512,7 +512,55 @@ header .banner img {
 }
 
 /* End digi-link media query*/
-.hero-continer {
-  height: 100vh;
+/* amazing-slider */
+.amazing {
+  background: -webkit-gradient(linear, left bottom, left top, from(#ef4056), to(#ef394e));
+  background: linear-gradient(to top, #ef4056, #ef394e);
+  margin-bottom: 5rem;
 }
+
+.amazing .amazing-slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.amazing .amazing-slider__col a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem 1rem;
+}
+
+.amazing .amazing-slider__col a .col-image {
+  width: 145px;
+  height: 115px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.amazing .amazing-slider__col a .col-image:first-child {
+  width: 92px;
+  height: 77px;
+  margin-bottom: 10px;
+}
+
+.amazing .amazing-slider__col a .col__title {
+  margin-top: 10px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* End amazing-slider */
 /*# sourceMappingURL=main.css.map */
