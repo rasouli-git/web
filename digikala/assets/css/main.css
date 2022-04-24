@@ -518,6 +518,7 @@ header .banner img {
   background: linear-gradient(to top, #ef4056, #ef394e);
   margin-bottom: 5rem;
   overflow-x: auto;
+  scrollbar-width: none;
 }
 
 .amazing .amazing-slider {

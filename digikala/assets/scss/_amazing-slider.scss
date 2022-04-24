@@ -3,6 +3,7 @@
     background: linear-gradient(to top,$color-primary-500,$color-primary-700);
     margin-bottom: 5rem;
     overflow-x: auto;
+    scrollbar-width: none;
 
     .amazing-slider{
         display: flex;
