@@ -519,6 +519,7 @@ header .banner img {
   margin-bottom: 5rem;
   overflow-x: auto;
   scrollbar-width: none;
+  scroll-behavior: smooth;
 }
 
 .amazing .amazing-slider {
@@ -672,5 +673,50 @@ header .banner img {
   width: 100%;
 }
 
+.amazing .amazing-slider__more {
+  padding: 7rem 4rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 8px;
+}
+
+.amazing .amazing-slider__more .more__icon {
+  width: 50px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 100%;
+  border: 2px solid #fff;
+}
+
+.amazing .amazing-slider__more .more__icon span {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.amazing .amazing-slider__more .more-title {
+  width: 100px;
+  color: #fff;
+  margin-top: 15px;
+  text-align: center;
+}
+
 /* End amazing-slider */
+/*  amazing-slider media query */
+@media screen and (min-width: 1024px) {
+  .amazing {
+    border-radius: 20px;
+  }
+}
+
+/*  End amazing-slider media query */
 /*# sourceMappingURL=main.css.map */
