@@ -772,4 +772,10 @@ header .banner img {
 }
 
 /* End media query easy-access*/
+/* product category */
+.p-category h3 {
+  text-align: center;
+}
+
+/* End product category */
 /*# sourceMappingURL=main.css.map */
