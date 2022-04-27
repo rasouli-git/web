@@ -3,7 +3,10 @@
 
     h2{
         text-align: center;
-        margin: 2rem 0;
+        margin: 3rem 0;
+        font-size: 1.8rem;
+        color: $color-neutral-900;
+        font-weight: 500;
     }
     ul{
         display: flex;
@@ -23,6 +26,7 @@
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
+                color: $color-neutral-900;
 
                 
                 img{
@@ -32,6 +36,7 @@
                 span{
                     flex-basis: 84px;
                     text-align: center;
+                    line-height: 2rem;
                 }
             }
         }
@@ -43,15 +48,25 @@
 @media screen and (min-width:1024px) {
     .p-category{
 
+        h2{
+            margin: 6rem 0;
+            font-size: 2.1rem;
+        }
         ul{
 
             li{
                 flex-basis: calc(100%/5);
 
                 a{
+                    img{
+                        width: 170px;
+                        height: 170px;
+                    }
 
                     span{
                         width: unset;
+                        font-size: 1.2rem;
+                        font-weight: 700;
                     }
                 }
             }
