@@ -29,6 +29,8 @@ html {
 body {
   font-size: 1.1rem;
   font-family: 'IranYekan';
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .container {
@@ -727,7 +729,7 @@ header .banner img {
 /*  End amazing-slider media query */
 /* easy-access*/
 .easy-access {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .easy-access ul {
@@ -773,9 +775,76 @@ header .banner img {
 
 /* End media query easy-access*/
 /* product category */
-.p-category h3 {
+.p-category h2 {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.p-category ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.p-category ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: calc(100%/3);
+      flex-basis: calc(100%/3);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.p-category ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.p-category ul li a img {
+  width: 90px;
+  height: 90px;
+}
+
+.p-category ul li a span {
+  -ms-flex-preferred-size: 84px;
+      flex-basis: 84px;
   text-align: center;
 }
 
 /* End product category */
+/* media query product category */
+@media screen and (min-width: 1024px) {
+  .p-category ul li {
+    -ms-flex-preferred-size: calc(100%/5);
+        flex-basis: calc(100%/5);
+  }
+  .p-category ul li a span {
+    width: unset;
+  }
+}
+
+/* End media query product category */
 /*# sourceMappingURL=main.css.map */
