@@ -934,17 +934,31 @@ header .banner img {
       -ms-flex-align: center;
           align-items: center;
   border: 1px solid #e0e0e2;
+  border-radius: 20px;
   overflow-x: auto;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
 }
 
 .digi-suggestion .suggestion-menu__item {
-  padding: 1rem 2rem;
   border-left: 1px solid #f0f0f1;
 }
 
 .digi-suggestion .suggestion-menu__item a {
-  padding: 2rem 4rem;
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2rem 3rem;
 }
 
 .digi-suggestion .suggestion-menu__item a:nth-child(odd) {
@@ -965,6 +979,7 @@ header .banner img {
           justify-content: center;
   border-radius: 100%;
   background-color: #f0f0f1;
+  margin-bottom: 1rem;
 }
 
 .digi-suggestion .suggestion-menu__item a div .image-filter {
@@ -989,5 +1004,25 @@ header .banner img {
   z-index: 1;
 }
 
+.digi-suggestion .suggestion-menu__item a span {
+  width: 100px;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  color: #0c0c0c;
+}
+
 /* End digi-suggestion */
+/* media query digi-suggestion */
+@media screen and (min-width: 1024px) {
+  .digi-suggestion .suggestion-menu__item {
+    padding: 1rem 2rem;
+  }
+  .digi-suggestion .suggestion-menu__item a {
+    padding: 2rem 3rem;
+  }
+}
+
+/* End media query digi-suggestion */
 /*# sourceMappingURL=main.css.map */

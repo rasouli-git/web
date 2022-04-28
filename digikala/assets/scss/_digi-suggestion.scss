@@ -15,15 +15,21 @@
         display: flex;
         align-items: center;
         border: 1px solid $color-neutral-200;
+        border-radius: 20px;
         overflow-x: auto;
+        scrollbar-width: none;
+        scroll-behavior: smooth;
 
         &__item{
-            padding: 1rem 2rem;
             border-left: 1px solid $color-neutral-100;
+            
 
             a{
-                padding: 2rem 4rem;
-                display: block;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                padding: 2rem 3rem;
 
                 &:nth-child(odd){
                     border-bottom: 1px solid $color-neutral-200;
@@ -37,6 +43,7 @@
                     justify-content: center;
                     border-radius: 100%;
                     background-color: $color-neutral-100;
+                    margin-bottom: 1rem;
 
                     .image-filter{
                         position: relative;
@@ -60,8 +67,37 @@
                         }
                     }
                 }
+                span{
+                    width: 100px;
+                    text-align: center;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    color: $color-neutral-900;
+                }
             }
         }
     }
 }
 /* End digi-suggestion */
+
+
+
+/* media query digi-suggestion */
+@media screen and (min-width:1024px) {
+
+    .digi-suggestion{
+
+        .suggestion-menu{
+            &__item{
+                padding: 1rem 2rem;
+    
+                a{
+                    padding: 2rem 3rem;
+                }
+            }
+        }
+    }
+}
+
+/* End media query digi-suggestion */
