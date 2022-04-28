@@ -1,0 +1,36 @@
+/* discount access*/
+.discount-access{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+
+    div{
+        flex-basis: calc(50% - .5rem);
+        border-radius: 16px;
+        overflow: hidden;
+        
+        a{
+            display: block;
+
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+/* End discount access*/
+
+/* media query discount access*/
+@media screen and (min-width:1024px) {
+    .discount-access{
+
+        div{
+            height: 260px;
+        }
+    }
+}
+/* End media query discount access*/

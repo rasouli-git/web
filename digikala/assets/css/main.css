@@ -39,7 +39,7 @@ body {
   margin: 0 auto;
 }
 
-.hero-continer {
+.hero-container {
   max-width: 1336px;
   padding: 0 2rem;
   margin: 0 auto;
@@ -862,4 +862,47 @@ header .banner img {
 }
 
 /* End media query product category */
+/* discount access*/
+.discount-access {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 3rem;
+}
+
+.discount-access div {
+  -ms-flex-preferred-size: calc(50% - .5rem);
+      flex-basis: calc(50% - .5rem);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.discount-access div a {
+  display: block;
+}
+
+.discount-access div a img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* End discount access*/
+/* media query discount access*/
+@media screen and (min-width: 1024px) {
+  .discount-access div {
+    height: 260px;
+  }
+}
+
+/* End media query discount access*/
 /*# sourceMappingURL=main.css.map */
