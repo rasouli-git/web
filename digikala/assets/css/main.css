@@ -518,7 +518,7 @@ header .banner img {
 .amazing {
   background: -webkit-gradient(linear, left bottom, left top, from(#ef4056), to(#ef394e));
   background: linear-gradient(to top, #ef4056, #ef394e);
-  margin-bottom: 2rem;
+  margin: 2rem -2rem;
   overflow-x: auto;
   scrollbar-width: none;
   scroll-behavior: smooth;
@@ -549,7 +549,6 @@ header .banner img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 1rem;
 }
 
 .amazing .amazing-slider__col a .col-image {
@@ -716,10 +715,15 @@ header .banner img {
 /*  amazing-slider media query */
 @media screen and (min-width: 1024px) {
   .amazing {
+    margin: 2rem 0;
     border-radius: 20px;
+    padding: 0 .1rem;
   }
   .amazing .amazing-slider {
     overflow: hidden;
+  }
+  .amazing .amazing-slider__col a {
+    padding: 0 1rem;
   }
   .amazing .amazing-slider__item {
     padding: 2rem 2.5rem;

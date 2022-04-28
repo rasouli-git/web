@@ -1,7 +1,7 @@
 /* amazing-slider */
 .amazing{
     background: linear-gradient(to top,$color-primary-500,$color-primary-700);
-    margin-bottom: 2rem;
+    margin: 2rem -2rem;
     overflow-x: auto;
     scrollbar-width: none;
     scroll-behavior: smooth;
@@ -18,7 +18,7 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                padding: 0 1rem;
+                
                 
                 .col-image{
                     width: 145px;
@@ -152,11 +152,19 @@
 /*  amazing-slider media query */
 @media screen and (min-width:1024px) {
     .amazing{
+        margin: 2rem 0;
         border-radius: 20px;
+        padding: 0 .1rem;
 
         .amazing-slider{
             overflow: hidden;
 
+            &__col{
+
+                a{
+                    padding: 0 1rem;
+                }
+            }
             &__item{
                 padding: 2rem 2.5rem;
             }
