@@ -8,9 +8,11 @@
         flex-wrap: wrap;
 
         li{
-            width: 48%;
+            width: calc(50% - 1.5rem);
+            margin: .5rem;
             border-radius: 20px;
             overflow: hidden;
+
             a{
                 display: block;
                 img{

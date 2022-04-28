@@ -748,7 +748,8 @@ header .banner img {
 }
 
 .easy-access ul li {
-  width: 48%;
+  width: calc(50% - 1.5rem);
+  margin: .5rem;
   border-radius: 20px;
   overflow: hidden;
 }
