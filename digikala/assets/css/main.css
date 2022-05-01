@@ -108,9 +108,9 @@ header .banner img {
   height: 90%;
 }
 
-.header__question {
-  font-size: 1.8rem;
-  color: #424750;
+.header__question img {
+  width: 20px;
+  height: 20px;
 }
 
 .header__search {

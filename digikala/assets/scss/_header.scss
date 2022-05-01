@@ -29,8 +29,11 @@ header{
         }
     }
     &__question{
-        font-size: 1.8rem;
-        color: $color-icon-high-emphasis;
+
+        img{
+            width: 20px;
+            height: 20px;
+        }
     }
     &__search{
         display: flex;
