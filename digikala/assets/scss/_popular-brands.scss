@@ -1,13 +1,69 @@
 /* popular-brands */
 .popular-brands{
     border: 1px solid $color-neutral-200;
-    border-radius: $large-radius;
+    border-radius: $global-radius;
+    margin-bottom: 10rem;
 
     &__title{
         display: flex;
         justify-content: center;
         align-items: center;
+        padding: 2rem 0;
+
+        span{
+            margin-left: 10px;
+            font-size: 2rem;
+            color: $color-rating-0-2;
+        }
+        h3{
+            font-size: 1.8rem;
+            color: $color-neutral-900;
+            font-weight: 500;
+        }
+    }
+    &__menu{
+        overflow: hidden;
+        .brands-menu{
+            display: flex;
+            align-items: center;
+            margin-bottom: 2rem;
+
+
+            li{
+                margin-left: 5px;
+                padding: 1rem 2.5rem;
+                border-left: 1px solid $color-neutral-100;
+
+                a{
+                    display: block;
+
+                    img{
+                        width: 110px;
+                        height: 110px;
+                        object-fit: contain;
+                    }
+                }
+            }
+        }
+
     }
 
 }
 /* End popular-brands */
+
+/* media query popular-brands */
+@media screen and (min-width:1024px) {
+    .popular-brands{
+
+        &__title{
+
+            h3{
+                font-size: 2.1rem;
+
+            }
+        }
+    }
+}
+/* End media query popular-brands */
+
+
