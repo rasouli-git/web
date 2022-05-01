@@ -20,6 +20,10 @@
         scrollbar-width: none;
         scroll-behavior: smooth;
 
+        &::-webkit-scrollbar{
+            display: none;
+        }
+
         &__item{
             border-left: 1px solid $color-neutral-100;
             

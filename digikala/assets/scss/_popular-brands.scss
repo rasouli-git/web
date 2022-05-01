@@ -25,6 +25,10 @@
         scrollbar-width:none;
         scroll-behavior: smooth;
 
+        &::-webkit-scrollbar{
+            display: none;
+        }
+
         .brands-menu{
             display: flex;
             align-items: center;
@@ -46,6 +50,7 @@
                     }
                 }
             }
+            
         }
 
     }
