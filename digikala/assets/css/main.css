@@ -1027,8 +1027,6 @@ header .banner img {
 /* End media query digi-suggestion */
 /* popular-brands */
 .popular-brands {
-  border: 1px solid #e0e0e2;
-  border-radius: 8px;
   margin-bottom: 10rem;
 }
 
@@ -1058,7 +1056,9 @@ header .banner img {
 }
 
 .popular-brands__menu {
-  overflow: hidden;
+  overflow-x: auto;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
 }
 
 .popular-brands__menu .brands-menu {
@@ -1073,7 +1073,7 @@ header .banner img {
 
 .popular-brands__menu .brands-menu li {
   margin-left: 5px;
-  padding: 1rem 2.5rem;
+  padding: 1rem;
   border-left: 1px solid #f0f0f1;
 }
 
@@ -1082,8 +1082,8 @@ header .banner img {
 }
 
 .popular-brands__menu .brands-menu li a img {
-  width: 110px;
-  height: 110px;
+  width: 70px;
+  height: 70px;
   -o-object-fit: contain;
      object-fit: contain;
 }
@@ -1091,8 +1091,19 @@ header .banner img {
 /* End popular-brands */
 /* media query popular-brands */
 @media screen and (min-width: 1024px) {
+  .popular-brands {
+    border: 1px solid #e0e0e2;
+    border-radius: 8px;
+  }
   .popular-brands__title h3 {
     font-size: 2.1rem;
+  }
+  .popular-brands__menu .brands-menu li {
+    padding: 1rem 2.5rem;
+  }
+  .popular-brands__menu .brands-menu li a img {
+    width: 110px;
+    height: 110px;
   }
 }
 
