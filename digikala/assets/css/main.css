@@ -1025,4 +1025,10 @@ header .banner img {
 }
 
 /* End media query digi-suggestion */
+/* popular-brands */
+.popular-brands {
+  border: 1px solid #e0e0e2;
+}
+
+/* End popular-brands */
 /*# sourceMappingURL=main.css.map */

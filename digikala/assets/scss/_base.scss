@@ -21,7 +21,10 @@ $color-icon-warning:#f9a825;
 $color-icon-low-emphasis :#a1a3a8;
 $color-icon-high-emphasis :#424750;
 
-$border-radius:8px;
+$small-radius:4px;
+$medium-radius:8px;
+$large-radius:16px;
+$global-radius:8px;
 
 @font-face{
     font-family: 'IranYekan';
