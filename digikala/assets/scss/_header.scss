@@ -67,6 +67,11 @@ header{
         span{
             font-size: 1.8rem;
             color: $color-icon-high-emphasis;
+
+            img{
+                width: 24px;
+                height: 22px;
+            }
         }
     }
 
@@ -82,11 +87,17 @@ header{
         cursor: pointer;
 
         .location__title{
+            display: flex;
+            align-items: center;
 
             .icon{
                 color: $color-icon-warning;
                 margin-left: .5rem;
-                font-size: 1.5rem;
+
+                img{
+                    width: 16px;
+                    height: 16px;
+                }
             }
         }
         .icon{
@@ -137,6 +148,16 @@ header{
             .sign-up{
                 display: inline-flex;
                 margin-right: 5px;
+            }
+        }
+        &__basket{ 
+            margin-right: 0;
+
+            span{
+
+                img{
+                    height: 24px;
+                }
             }
         }
         .nav__menu{

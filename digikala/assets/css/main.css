@@ -160,6 +160,11 @@ header .banner img {
   color: #424750;
 }
 
+.header__basket span img {
+  width: 24px;
+  height: 22px;
+}
+
 .header .nav__menu {
   display: none;
 }
@@ -174,10 +179,23 @@ header .banner img {
   cursor: pointer;
 }
 
+.header__location .location__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .header__location .location__title .icon {
   color: #f9a825;
   margin-left: .5rem;
-  font-size: 1.5rem;
+}
+
+.header__location .location__title .icon img {
+  width: 16px;
+  height: 16px;
 }
 
 .header__location .icon {
@@ -224,6 +242,12 @@ header .banner img {
     display: -ms-inline-flexbox;
     display: inline-flex;
     margin-right: 5px;
+  }
+  .header__basket {
+    margin-right: 0;
+  }
+  .header__basket span img {
+    height: 24px;
   }
   .header .nav__menu {
     display: -webkit-box;
