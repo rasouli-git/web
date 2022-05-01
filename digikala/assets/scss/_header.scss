@@ -50,9 +50,15 @@ header{
         cursor: pointer;
 
         .icon{
-            font-size: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             transform: rotate(180deg);
-            color: $color-icon-high-emphasis;
+
+            img{
+                width: 20px;
+                height: 24px;
+            }
         }
         .sign-in{
             margin-right: 1rem;
@@ -153,12 +159,6 @@ header{
         &__basket{ 
             margin-right: 0;
 
-            span{
-
-                img{
-                    height: 24px;
-                }
-            }
         }
         .nav__menu{
             display: flex;
