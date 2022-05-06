@@ -1064,7 +1064,7 @@ header .banner img {
 /* End media query digi-suggestion */
 /* popular-brands */
 .popular-brands {
-  margin-bottom: 10rem;
+  margin-bottom: 2rem;
 }
 
 .popular-brands__title {
@@ -1149,4 +1149,40 @@ header .banner img {
 }
 
 /* End media query popular-brands */
+/* mobile category */
+.mobile-category__item {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(0, 1fr))[1];
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.mobile-category__item .category-title h3 {
+  color: #232933;
+  margin: 2rem 0;
+}
+
+.mobile-category__item .mobile-item {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(0, 1fr))[2];
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.mobile-category__item .mobile-item a {
+  display: inline-block;
+}
+
+.mobile-category__item .mobile-item a span {
+  display: block;
+  height: 100%;
+  padding: .5rem;
+}
+
+.mobile-category__item .mobile-item a span img {
+  width: 100%;
+  height: 100%;
+}
+
+/* End mobile category */
 /*# sourceMappingURL=main.css.map */

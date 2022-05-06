@@ -1,0 +1,36 @@
+/* mobile category */
+.mobile-category{
+    
+
+    &__item{
+        display: grid;
+        grid-template-columns: repeat(1,minmax(0,1fr));
+
+        .category-title{
+
+            h3{
+                color: $color-neutral-800;
+                margin: 2rem 0;
+            }
+            p{}
+        }
+        .mobile-item{
+            display: grid;
+            grid-template-columns: repeat(2,minmax(0,1fr));
+
+            a{
+                display: inline-block;
+                span{
+                    display: block;
+                    height: 100%;
+                    padding: .5rem;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+/* End mobile category */
