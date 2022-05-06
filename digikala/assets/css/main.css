@@ -1157,9 +1157,16 @@ header .banner img {
       grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
-.mobile-category__item .category-title h3 {
+.mobile-category__item .category-title h4 {
+  margin: 1rem 0;
+  font-size: 1.4rem;
+  font-weight: 700;
   color: #232933;
-  margin: 2rem 0;
+}
+
+.mobile-category__item .category-title p {
+  margin-bottom: 2rem;
+  color: #a1a3a8;
 }
 
 .mobile-category__item .mobile-item {
@@ -1176,12 +1183,37 @@ header .banner img {
 .mobile-category__item .mobile-item a span {
   display: block;
   height: 100%;
-  padding: .5rem;
+  padding: 1rem;
 }
 
 .mobile-category__item .mobile-item a span img {
   width: 100%;
   height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.mobile-category__item .item-more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 2rem 0;
+}
+
+.mobile-category__item .item-more a {
+  color: #19bfd3;
+  font-weight: 700;
+}
+
+.mobile-category__item .item-more a .icon {
+  font-size: .9rem;
+  margin-right: .5rem;
 }
 
 /* End mobile category */
