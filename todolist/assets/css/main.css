@@ -143,4 +143,9 @@ body {
   color: green;
   border: 1px solid #eee;
   border-radius: 8px;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
 }/*# sourceMappingURL=main.css.map */

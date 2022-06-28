@@ -1,12 +1,11 @@
 const todoWindow = document.querySelector('.plus')
 
-
-
 const todoInput = document.querySelector('#todo-input');
 const todoDiv = document.querySelector('.todo');
 const backDrop = document.querySelector('.backdrop')
 const modalTodo = document.querySelector('.modal-todo')
 const buttons = document.querySelectorAll('.btn')
+
 
 
 
@@ -65,3 +64,31 @@ function addTodo(){
     
 }
 
+
+
+
+const todoItem = document.querySelector('.todo')
+
+todoItem.addEventListener('click',checkRemove);
+
+
+function checkRemove(e){
+    const classList = [... e.target.classList];
+    const item = e.target;
+
+    if(classList[1]==='fa-edit'){
+
+    }
+
+    else if(classList[1]==='fa-check'){
+        const parentItem = item.parentElement.parentElement;
+        parentItem.classList.toggle('completed');
+
+    }
+
+    else if(classList[1]==='fa-remove'){
+        const parentItem = item.parentElement.parentElement;
+        parentItem.remove();
+        console.log('ok')
+    }
+}
