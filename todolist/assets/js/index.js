@@ -14,6 +14,7 @@ const buttons = document.querySelectorAll('.btn')
 todoWindow.addEventListener('click',()=>{
     modalTodo.style.display = 'flex'
     backDrop.style.display = 'block'
+    todoWindow.querySelector('span').style.transform = 'rotate(136deg)'
 })
 
 // todoInput.addEventListener('input',addTodo)
@@ -27,6 +28,7 @@ buttons.forEach((btn)=>{
             addTodo()
             modalTodo.style.display = 'none'
             backDrop.style.display = 'none'
+            todoWindow.querySelector('span').style.transform = 'rotate(0)'
 
 
         }
@@ -36,6 +38,7 @@ buttons.forEach((btn)=>{
         else{
             modalTodo.style.display = 'none'
             backDrop.style.display = 'none'
+            todoWindow.querySelector('span').style.transform = 'rotate(0)'
 
         }
         
