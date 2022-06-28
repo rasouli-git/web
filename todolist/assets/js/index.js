@@ -43,9 +43,11 @@ buttons.forEach((btn)=>{
         
     })
 })
-
-
-
+backDrop.addEventListener('click',()=>{
+    modalTodo.style.display = 'none'
+    backDrop.style.display = 'none'
+    todoWindow.querySelector('span').style.transform = 'rotate(0)'
+})
 
 function addTodo(){
 
@@ -94,9 +96,11 @@ function checkRemove(e){
 }
 
 
+
+
+
+
 const searchInput = document.querySelector('.searchInput');
-
-
 const filters = {
     filter:'',
 }
@@ -110,3 +114,6 @@ function rendeSearch(item,filters){
 
     
 }
+
+
+
