@@ -2,24 +2,37 @@ const todoInput = document.querySelector('#todo-input');
 const todoDiv = document.querySelector('.todo');
 const modalTodo = document.querySelector('.modal-todo')
 const buttons = document.querySelectorAll('.btn')
-todoInput.addEventListener('input',addTodo)
+
+
+// todoInput.addEventListener('input',addTodo)
 
 
 buttons.forEach((btn)=>{
     btn.addEventListener('click',()=>{
         const classList = btn.classList;
         // console.log(classList)
-        if(classList.contains('close')){
+        if(classList.contains('ok')){
+            addTodo()
+            modalTodo.classList.add('exit');
+
+
+        }
+        else if(classList.contains('apply')){
+            addTodo();
+        }
+        else{
             console.log('close btn');
 
         }
+        
     })
 })
 
 
 
-function addTodo(e){
-    
+
+function addTodo(){
+
     const todoItem = document.createElement('div');
     todoItem.classList.add('todo__item');
     const todoItemInner = 
@@ -31,4 +44,7 @@ function addTodo(e){
     </div>`
     todoItem.innerHTML = todoItemInner ;
     todoDiv.appendChild(todoItem);
+    todoInput.value=''
+    
 }
+
