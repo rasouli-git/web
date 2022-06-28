@@ -1,5 +1,6 @@
 const todoInput = document.querySelector('#todo-input');
 const todoDiv = document.querySelector('.todo');
+const backDrop = document.querySelector('.backdrop')
 const modalTodo = document.querySelector('.modal-todo')
 const buttons = document.querySelectorAll('.btn')
 
@@ -14,6 +15,7 @@ buttons.forEach((btn)=>{
         if(classList.contains('ok')){
             addTodo()
             modalTodo.classList.add('exit');
+            backDrop.classList.add('exit');
 
 
         }
@@ -22,6 +24,8 @@ buttons.forEach((btn)=>{
         }
         else{
             console.log('close btn');
+            modalTodo.classList.add('exit');
+            backDrop.classList.add('exit');
 
         }
         
