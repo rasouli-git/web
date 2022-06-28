@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <title>todolist</title>
+</head>
+<body>
+    <section class="todolist">
+        <header>
+            <div class="hamburger-menu">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+            <div class="title">
+                todo-list app
+            </div>
+            <div class="plus">
+                <span class="fa fa-plus"></span>
+            </div>
+        </header>
+        <main>
+
+            <section class="search">
+                <div class="search__filter">
+                    <input type="text" placeholder="search for items ...">
+                    <span class="fa fa-search"></span>
+                </div>
+            </section>
+
+
+            <section class="todo">
+                <div class="todo__item">
+                    <span>name</span>
+                    <div class="social">
+                        <span class="fa fa-edit"></span>
+                        <span class="fa fa-check"></span>
+                        <span class="fa fa-remove"></span>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+
+
+        <div class="backdrop"></div>
+        <section class="modal-todo">
+            <h3>insert todo</h3>
+            <input type="text" id="todo-input" placeholder="typing ...">
+            <div class="buttons">
+                <button class="btn close">close</button>
+                <button class="btn apply">apply</button>
+                <button class="btn ok">ok</button>
+            </div>
+        </section>
+    </section>
+    <script src="./assets/js/index.js"></script>
+</body>
+</html>

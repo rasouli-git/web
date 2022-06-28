@@ -1,0 +1,143 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.4rem;
+}
+
+.todolist header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(128, 0, 128, 0.9);
+  padding: 3rem 1.5rem;
+  color: #eee;
+}
+.todolist header .hamburger-menu .line {
+  width: 20px;
+  height: 2px;
+  display: block;
+  background-color: #eee;
+  margin-bottom: 2px;
+}
+.todolist main {
+  padding: 1rem;
+}
+.todolist main .search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eeeeee;
+  padding: 1rem 0;
+}
+.todolist main .search__filter {
+  flex-basis: 85%;
+  display: flex;
+  position: relative;
+}
+.todolist main .search__filter input {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 8px;
+  outline: 0;
+  border: none;
+}
+.todolist main .search__filter span {
+  font-size: 1.3rem;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+.todolist main .todo {
+  margin-top: 2rem;
+  padding: 1.5rem 1rem;
+  background-color: #eee;
+}
+.todolist main .todo__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 2rem 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+}
+.todolist main .todo__item .social span {
+  margin-left: 10px;
+  font-weight: 700;
+  transition: all 0.3s ease-out;
+}
+.todolist main .todo__item .social span:hover {
+  color: blue;
+}
+.todolist .backdrop {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+}
+.todolist .modal-todo {
+  width: 90%;
+  height: 300px;
+  background-color: #fff;
+  position: fixed;
+  margin: 0 auto;
+  top: 30%;
+  transform: translateY(-30%);
+  right: 0;
+  left: 0;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.todolist .modal-todo h3 {
+  margin-top: 10px;
+  -webkit-text-decoration: underline #323232;
+          text-decoration: underline #323232;
+}
+.todolist .modal-todo input {
+  padding: 1rem;
+  width: 70%;
+  box-shadow: 0 20px 20px 10px #eee;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+.todolist .modal-todo .buttons {
+  display: flex;
+}
+.todolist .modal-todo .buttons button {
+  margin: 0 5px;
+  padding: 0.5rem 2rem;
+  border: 0;
+  background-color: unset;
+}
+.todolist .modal-todo .buttons .close {
+  color: crimson;
+}
+.todolist .modal-todo .buttons .ok {
+  color: green;
+  border: 1px solid #eee;
+  border-radius: 8px;
+}/*# sourceMappingURL=main.css.map */
