@@ -90,7 +90,9 @@
         background-color: rgba(0, 0, 0, 0.3);
         position: fixed;
         top: 0;
-        // display: none;
+        transition: all 3s ease-in-out;
+        display: none;
+        
     }
 
     .modal-todo{
@@ -104,11 +106,12 @@
         right: 0;
         left: 0;
         padding: 1rem;
-        // display: none;
-        display: flex;
+        display: none;
+        // display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
+        transition: all .4s ease-out;
 
         h3{
             margin-top: 10px;
@@ -134,9 +137,6 @@
             .close{
                 color: $crimson-color;
             }
-            .apply{
-               
-            }
             .ok{
                 color: green;
                 border: 1px solid $secondary-color;
@@ -146,8 +146,6 @@
         }
         
     }
+    
 
-}
-.exit{
-    display: none !important;
 }

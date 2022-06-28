@@ -1,9 +1,20 @@
+const todoWindow = document.querySelector('.plus')
+
+
+
 const todoInput = document.querySelector('#todo-input');
 const todoDiv = document.querySelector('.todo');
 const backDrop = document.querySelector('.backdrop')
 const modalTodo = document.querySelector('.modal-todo')
 const buttons = document.querySelectorAll('.btn')
 
+
+
+
+todoWindow.addEventListener('click',()=>{
+    modalTodo.style.display = 'flex'
+    backDrop.style.display = 'block'
+})
 
 // todoInput.addEventListener('input',addTodo)
 
@@ -14,8 +25,8 @@ buttons.forEach((btn)=>{
         // console.log(classList)
         if(classList.contains('ok')){
             addTodo()
-            modalTodo.classList.add('exit');
-            backDrop.classList.add('exit');
+            modalTodo.style.display = 'none'
+            backDrop.style.display = 'none'
 
 
         }
@@ -23,9 +34,8 @@ buttons.forEach((btn)=>{
             addTodo();
         }
         else{
-            console.log('close btn');
-            modalTodo.classList.add('exit');
-            backDrop.classList.add('exit');
+            modalTodo.style.display = 'none'
+            backDrop.style.display = 'none'
 
         }
         
