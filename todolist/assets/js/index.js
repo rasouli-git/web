@@ -92,3 +92,21 @@ function checkRemove(e){
         console.log('ok')
     }
 }
+
+
+const searchInput = document.querySelector('.searchInput');
+
+
+const filters = {
+    filter:'',
+}
+searchInput.addEventListener('input',(data)=>{
+    filters.filter = data.target.value
+    const item = todoItem.textContent;
+    rendeSearch(item,filters)
+})
+
+function rendeSearch(item,filters){
+
+    
+}
