@@ -91,8 +91,8 @@ function checkRemove(e){
 
     else if(classList[1]==='fa-remove'){
         const parentItem = item.parentElement.parentElement;
+        removeLocalTodos(parentItem);
         parentItem.remove();
-        console.log('ok')
     }
 }
 
@@ -119,6 +119,7 @@ function rendeSearch(item,filters){
 
 
 /* local storage */
+document.addEventListener('DOMContentLoaded',getLocalTodos);
 
 function saveLocalTodos(todo){
 
@@ -130,8 +131,6 @@ function saveLocalTodos(todo){
     localStorage.setItem('todos',JSON.stringify(savedTodos))
 
 }
-
-document.addEventListener('DOMContentLoaded',getLocalTodos)
 
 function getLocalTodos(){
     let savedTodos = localStorage.getItem('todos') ?
@@ -150,4 +149,16 @@ function getLocalTodos(){
         todoItem.innerHTML = todoItemInner ;
         todoDiv.appendChild(todoItem);
     })
+}
+
+function removeLocalTodos(todo){
+    // console.log(todo.children[0].innerText)
+
+
+    let savedTodos = localStorage.getItem('todos') ?
+    JSON.parse(localStorage.getItem('todos')) : [];
+
+    let filter = savedTodos.filter(t => t!==todo.children[0].innerText)
+
+    localStorage.setItem('todos',JSON.stringify(filter))
 }
