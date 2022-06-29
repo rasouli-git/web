@@ -1,0 +1,132 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.5rem;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #333;
+  color: #eee;
+}
+header .container {
+  padding: 0.6rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .container .menu i {
+  font-weight: 700;
+}
+header .container .menu .logo {
+  margin-left: 0.5rem;
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+header .container .menu .logo span {
+  color: crimson;
+}
+header .container .search {
+  width: 55%;
+  position: relative;
+  display: flex;
+}
+header .container .search .search-input {
+  font-size: 1.2rem;
+  border-radius: 20px;
+  padding: 0.2rem 1rem;
+  flex-basis: 100%;
+}
+header .container .search span {
+  position: absolute;
+  top: 50%;
+  right: 7px;
+  transform: translateY(-50%);
+  font-size: 1.1rem;
+  color: #333;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  align-items: inherit;
+}
+main .icon-menu {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 2rem;
+  background-color: #333;
+  width: 50px;
+  position: relative;
+  border-top: 3px solid crimson;
+}
+main .icon-menu span {
+  color: #eee;
+  margin: 1rem 0;
+}
+main .icon-menu .arrow {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  position: absolute;
+  top: 0;
+  right: -8px;
+  background-color: #333;
+  border: 0;
+}
+main .icon-menu .arrow i {
+  font-size: 0.8rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  transform: translateY(-50%);
+}
+main .product {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+main .product div a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+}
+main .product div a img {
+  width: 200px;
+  height: 200px;
+}
+main .product div a .old-price {
+  text-decoration: line-through;
+}
+
+.reset, .decrement, .incerement {
+  padding: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  header .container {
+    padding: 1rem 2rem;
+  }
+}/*# sourceMappingURL=main.css.map */
