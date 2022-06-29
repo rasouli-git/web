@@ -130,3 +130,24 @@ function saveLocalTodos(todo){
     localStorage.setItem('todos',JSON.stringify(savedTodos))
 
 }
+
+document.addEventListener('DOMContentLoaded',getLocalTodos)
+
+function getLocalTodos(){
+    let savedTodos = localStorage.getItem('todos') ?
+    JSON.parse(localStorage.getItem('todos')) : [];
+
+    savedTodos.forEach(todo =>{
+        const todoItem = document.createElement('div');
+        todoItem.classList.add('todo__item');
+        const todoItemInner = 
+        `<span>${todo}</span>
+        <div class="social">
+            <span class="fa fa-edit"></span>
+            <span class="fa fa-check"></span>
+            <span class="fa fa-remove"></span>
+        </div>`
+        todoItem.innerHTML = todoItemInner ;
+        todoDiv.appendChild(todoItem);
+    })
+}
