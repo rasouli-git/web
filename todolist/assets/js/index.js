@@ -62,6 +62,7 @@ function addTodo(){
     </div>`
     todoItem.innerHTML = todoItemInner ;
     todoDiv.appendChild(todoItem);
+    saveLocalTodos(todoInput.value)
     todoInput.value=''
     
 }
@@ -117,3 +118,15 @@ function rendeSearch(item,filters){
 
 
 
+/* local storage */
+
+function saveLocalTodos(todo){
+
+    let savedTodos = localStorage.getItem('todos') ?
+    JSON.parse(localStorage.getItem('todos')) : [];
+
+    savedTodos.push(todo);
+
+    localStorage.setItem('todos',JSON.stringify(savedTodos))
+
+}
