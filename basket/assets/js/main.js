@@ -25,9 +25,8 @@ function closeModal(){
 
 
 import {productsData} from "./product.js";
+
 // 1. get products
-
-
 class Products{
 
     getProducts(){
@@ -59,7 +58,6 @@ class Ui{
 }
 
 // 3.storage
-
 class Storage{
     static saveProducts(products){
         localStorage.setItem('products',JSON.stringify(products))
@@ -70,10 +68,9 @@ document.addEventListener('DOMContentLoaded',()=>{
     // console.log('loaded');
     const products = new Products;
     const productsData = products.getProducts();
-    const ui = new Ui();
+    const ui = new Ui;
     ui.displayProducts(productsData);
-    Storage.saveProducts(productsData)
-    // console.log(productsData)
+    Storage.saveProducts(productsData);
 })
 
 
