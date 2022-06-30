@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shopping cart</title>
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="./assets/font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="navbar-center">
+        <span class="menu-icon">
+            <i class="fa fa-bars"></i>
+        </span>
+        <p class="nav-title">rasouli shopping</p>
+        <span class="cart-btn">
+            <i class="fa fa-cart-plus"></i>
+            <span class="cart-items">0</span>
+        </span>
+    </div>
+</nav>
+<!-- products -->
+<section>
+    <div class="products">
+        <h2 class="section-title">our products</h2>
+        <!-- single-products -->
+        <div class="product-center">
+            <!-- product -1 -->
+            <section class="product">
+                <div class="img-container">
+                    <img class="product-img" src="./assets/images/product-1.jpeg" alt="p -1">
+                </div>
+                <div class="product-desc">
+                    <p class="product-title">products title: rasouli bed</p>
+                    <p class="product-price">product price</p>
+                </div>
+                <button class="add-to-cart">
+                    add to cart
+                </button>
+            </section>
+            <!-- product -2 -->
+            <section class="product">
+                <div class="img-container">
+                    <img class="product-img" src="./assets/images/product-2.jpeg" alt="p -1">
+                </div>
+                <div class="product-desc">
+                    <p class="product-title">products title: rasouli bed</p>
+                    <p class="product-price">product price</p>
+                </div>
+                <button class="add-to-cart">
+                    add to cart
+                </button>
+            </section>
+            <!-- product -3 -->
+            <section class="product">
+                <div class="img-container">
+                    <img class="product-img" src="./assets/images/product-3.jpeg" alt="p -1">
+                </div>
+                <div class="product-desc">
+                    <p class="product-title">products title: rasouli bed</p>
+                    <p class="product-price">product price</p>
+                </div>
+                <button class="add-to-cart">
+                    add to cart
+                </button>
+            </section>
+            <!-- product -4 -->
+            <section class="product">
+                <div class="img-container">
+                    <img class="product-img" src="./assets/images/product-4.jpeg" alt="p -1">
+                </div>
+                <div class="product-desc">
+                    <p class="product-title">products title: rasouli bed</p>
+                    <p class="product-price">product price</p>
+                </div>
+                <button class="add-to-cart">
+                    add to cart
+                </button>
+            </section>
+            <!-- product -5 -->
+            <section class="product">
+                <div class="img-container">
+                    <img class="product-img" src="./assets/images/product-5.jpeg" alt="p -1">
+                </div>
+                <div class="product-desc">
+                    <p class="product-title">products title: rasouli bed</p>
+                    <p class="product-price">product price</p>
+                </div>
+                <button class="add-to-cart">
+                    add to cart
+                </button>
+            </section>
+        </div>
+    </div>
+
+</section>
+
+
+<!-- basket -->
+
+<section class="backdrop"></section>
+
+<section class="modal">
+    <div class="basket">
+        <h3>Your cart</h3>
+
+        <div class="basket__item">
+            <div class="item">
+                <div class="image">
+                    <img src="./assets/images/product-1.jpeg" alt="">
+                </div>
+                <div class="detail">
+                    <span class="title">rasouli bed</span>
+                    <span class="price"> 99 $</span>
+                </div>
+                <div class="counter">
+                    <span class="fa fa-chevron-up"></span>
+                    <span class="value">0</span>
+                    <span class="fa fa-chevron-down"></span>
+                </div>
+                <span class="remove">
+                    <span class="fa fa-trash"></span>
+                </span>
+            </div>
+
+            <div class="item">
+                <div class="image">
+                    <img src="./assets/images/product-1.jpeg" alt="">
+                </div>
+                <div class="detail">
+                    <span class="title">rasouli bed</span>
+                    <span class="price"> 99 $</span>
+                </div>
+                <div class="counter">
+                    <span class="fa fa-chevron-up"></span>
+                    <span class="value">0</span>
+                    <span class="fa fa-chevron-down"></span>
+                </div>
+                <span class="remove">
+                    <span class="fa fa-trash"></span>
+                </span>
+            </div>
+            <div class="item">
+                <div class="image">
+                    <img src="./assets/images/product-1.jpeg" alt="">
+                </div>
+                <div class="detail">
+                    <span class="title">rasouli bed</span>
+                    <span class="price"> 99 $</span>
+                </div>
+                <div class="counter">
+                    <span class="fa fa-chevron-up"></span>
+                    <span class="value">0</span>
+                    <span class="fa fa-chevron-down"></span>
+                </div>
+                <span class="remove">
+                    <span class="fa fa-trash"></span>
+                </span>
+            </div>
+        </div>
+        
+
+        <div class="buttons">
+            <div class="total-price">
+                total price :
+                <span>13,000</span>
+            </div>
+            <button class="btn clear-cart">clear Cart</button>
+            <button class="btn confirm">Confirm</button>
+        </div>
+
+    </div>
+</section>
+
+
+<script src="./assets/js/main.js"></script>
+</body>
+</html>
