@@ -5,6 +5,25 @@ const btnConfirm = document.querySelector('.btn.confirm');
 const productDOM = document.querySelector('.product-center');
 
 
+
+shopingCart.addEventListener('click',showModal);
+backDrop.addEventListener('click',closeModal);
+btnConfirm.addEventListener('click',closeModal);
+
+
+
+function showModal(){
+    backDrop.style.display = 'unset';
+    modal.style.display = 'unset';
+}
+
+function closeModal(){
+    backDrop.style.display = 'none';
+    modal.style.display = 'none';
+
+}
+
+
 import {productsData} from "./product.js";
 // 1. get products
 
@@ -41,33 +60,20 @@ class Ui{
 
 // 3.storage
 
-class Storage{}
+class Storage{
+    static saveProducts(products){
+        localStorage.setItem('products',JSON.stringify(products))
+    }
+}
 
 document.addEventListener('DOMContentLoaded',()=>{
     // console.log('loaded');
     const products = new Products;
     const productsData = products.getProducts();
     const ui = new Ui();
-    ui.displayProducts(productsData)
+    ui.displayProducts(productsData);
+    Storage.saveProducts(productsData)
     // console.log(productsData)
 })
 
 
-shopingCart.addEventListener('click',showModal);
-backDrop.addEventListener('click',closeModal);
-btnConfirm.addEventListener('click',closeModal);
-
-
-
-
-
-function showModal(){
-    backDrop.style.display = 'unset';
-    modal.style.display = 'unset';
-}
-
-function closeModal(){
-    backDrop.style.display = 'none';
-    modal.style.display = 'none';
-
-}
