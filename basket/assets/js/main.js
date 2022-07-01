@@ -4,7 +4,7 @@ const backDrop = document.querySelector('.backdrop');
 const btnConfirm = document.querySelector('.btn.confirm');
 const productDOM = document.querySelector('.product-center');
 
-const cart = []
+let cart = []
 
 shopingCart.addEventListener('click',showModal);
 backDrop.addEventListener('click',closeModal);
@@ -67,7 +67,14 @@ class Ui{
                 btn.disabled = true;
             }
             btn.addEventListener('click',(event)=>{
-                console.log(event.target.dataset.id);
+                event.target.innerText = 'in cart';
+                event.target.disabled = true
+
+                const addedProduct = Storage.getProduct(id);
+
+                cart = [... cart,{... addedProduct ,quantity : 1 }]
+
+                Storage.saveCart(cart);
             })
 
             // console.log(id)
@@ -78,7 +85,15 @@ class Ui{
 // 3.storage
 class Storage{
     static saveProducts(products){
-        localStorage.setItem('products',JSON.stringify(products))
+        localStorage.setItem('products',JSON.stringify(products));
+    }
+
+    static getProduct(id){
+        const _products = JSON.parse(localStorage.getItem('products'));
+        return _products.find((p)=> p.id===parseInt(id));
+    }
+    static saveCart(cart){
+        localStorage.setItem('cart',JSON.stringify(cart))
     }
 }
 
