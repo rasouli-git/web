@@ -4,6 +4,9 @@ const backDrop = document.querySelector('.backdrop');
 const btnConfirm = document.querySelector('.btn.confirm');
 const productDOM = document.querySelector('.product-center');
 
+const cartTotal = document.querySelector('.total-price-val');
+const cartItems = document.querySelector('.cart-items');
+
 let cart = []
 
 shopingCart.addEventListener('click',showModal);
@@ -75,11 +78,25 @@ class Ui{
                 cart = [... cart,{... addedProduct ,quantity : 1 }]
 
                 Storage.saveCart(cart);
+                this.setCartValue(cart)
             })
 
             // console.log(id)
         })
     }
+
+
+    setCartValue(cart){
+
+        let tempCartItems = 0;
+        const totalPrice = cart.reduce((acc,curr)=>{
+            tempCartItems += curr.quantity;
+            return acc + curr.quantity * curr.price
+        },0)
+        cartTotal.innerText = totalPrice.toFixed(2);
+        cartItems.innerText = tempCartItems;
+    }
+
 }
 
 // 3.storage
