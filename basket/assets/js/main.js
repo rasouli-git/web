@@ -4,7 +4,7 @@ const backDrop = document.querySelector('.backdrop');
 const btnConfirm = document.querySelector('.btn.confirm');
 const productDOM = document.querySelector('.product-center');
 
-
+const cart = []
 
 shopingCart.addEventListener('click',showModal);
 backDrop.addEventListener('click',closeModal);
@@ -55,6 +55,24 @@ class Ui{
             productDOM.innerHTML=result; 
         });
     }
+    getAddTocardBtns(){
+        const addTocartBtns = document.querySelectorAll('.add-to-cart');
+        const buttons = [... addTocartBtns];
+        
+        buttons.forEach((btn)=>{
+            const id = btn.dataset.id;
+            const isInCard= cart.find((p) => p.id ===id);
+            if(isInCard){
+                btn.innerText = 'In cart';
+                btn.disabled = true;
+            }
+            btn.addEventListener('click',(event)=>{
+                console.log(event.target.dataset.id);
+            })
+
+            // console.log(id)
+        })
+    }
 }
 
 // 3.storage
@@ -70,6 +88,7 @@ document.addEventListener('DOMContentLoaded',()=>{
     const productsData = products.getProducts();
     const ui = new Ui;
     ui.displayProducts(productsData);
+    ui.getAddTocardBtns();
     Storage.saveProducts(productsData);
 })
 
