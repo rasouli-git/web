@@ -8,6 +8,8 @@ const cartTotal = document.querySelector('.total-price-val');
 const cartItems = document.querySelector('.cart-items');
 const basketItems = document.querySelector('.basket__item');
 
+const clearCart = document.querySelector('.clear-cart')
+
 let cart = []
 
 shopingCart.addEventListener('click',showModal);
@@ -38,6 +40,8 @@ class Products{
     }
 
 }
+
+let buttonsDOM = []
 // 2.display product
 class Ui{
 
@@ -60,10 +64,10 @@ class Ui{
         });
     }
     getAddTocardBtns(){
-        const addTocartBtns = document.querySelectorAll('.add-to-cart');
-        const buttons = [... addTocartBtns];
+        const addTocartBtns = [... document.querySelectorAll('.add-to-cart')];
+        buttonsDOM = addTocartBtns;
         
-        buttons.forEach((btn)=>{
+        addTocartBtns.forEach((btn)=>{
             const id = btn.dataset.id;
             const isInCard= cart.find((p) => p.id ===id);
             if(isInCard){
@@ -100,6 +104,7 @@ class Ui{
         cartTotal.innerText = totalPrice.toFixed(2);
         cartItems.innerText = tempCartItems;
     }
+
     addCartItem(cartItem){
         const div = document.createElement('div');
         div.classList.add('item');
@@ -112,21 +117,50 @@ class Ui{
             <span class="price">${cartItem.price}</span>
           </div>
           <div class="counter">
-            <span class="fa fa-chevron-up"></span>
+            <span class="fa fa-chevron-up" data-id=${cartItem.id}></span>
             <span class="value">${cartItem.quantity}</span>
-            <span class="fa fa-chevron-down"></span>
+            <span class="fa fa-chevron-down" data-id=${cartItem.id}></span>
           </div>
           <span class="remove">
-            <span class="fa fa-trash"></span>
+            <span class="fa fa-trash" data-id=${cartItem.id}></span>
           </span>`;
           basketItems.appendChild(div);
 
 
     }
+
     setupApp(){
-        cart = Storage.getCart() || [];
-        cart.forEach((cartItem)=> this.addCartItem(cartItem))
+        cart = Storage.getCard() || [];
+        cart.forEach((cartItem) => this.addCartItem(cartItem));
         this.setCartValue(cart)
+    }
+    cartLogic(){
+        clearCart.addEventListener('click',()=>this.clearCart());
+
+    }
+    
+    clearCart(){
+        cart.forEach((cItem)=> this.removeItem(cItem.id));
+            while(basketItems.children.length){
+                basketItems.removeChild(basketItems.children[0])
+            }
+
+        closeModal();
+    }
+    removeItem(id){
+        
+        cart = cart.filter(cItem => cItem.id != id)
+        this.setCartValue(cart);
+        Storage.saveCart(cart);
+
+        this.getSingleButtons(id)
+
+    }
+    getSingleButtons(id){
+        // console.log(buttonsDOM);
+        const button = buttonsDOM.find((btn)=> btn.dataset.id == id);
+        button.innerText = 'add to card';
+        button.disabled = false;
     }
 
 }
@@ -144,7 +178,7 @@ class Storage{
     static saveCart(cart){
         localStorage.setItem('cart',JSON.stringify(cart))
     }
-    static getCart(){
+    static getCard(){
         return JSON.parse(localStorage.getItem('cart'));
     }
 }
@@ -154,9 +188,11 @@ document.addEventListener('DOMContentLoaded',()=>{
     const products = new Products;
     const productsData = products.getProducts();
     const ui = new Ui;
+    // ui.setupApp();
     ui.setupApp();
     ui.displayProducts(productsData);
     ui.getAddTocardBtns();
+    ui.cartLogic();
     Storage.saveProducts(productsData);
 })
 
