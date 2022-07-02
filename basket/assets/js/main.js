@@ -136,6 +136,23 @@ class Ui{
     }
     cartLogic(){
         clearCart.addEventListener('click',()=>this.clearCart());
+        basketItems.addEventListener('click',(event)=>{
+            // console.log(event.target)
+            if(event.target.classList.contains('fa-chevron-up')){
+                // console.log(event.target.dataset.id)
+                const addQuantity = event.target;
+                const addedItem = cart.find((cItem)=> cItem.id == addQuantity.dataset.id)
+                addedItem.quantity ++;
+                this.setCartValue(cart)
+                Storage.saveCart(cart)
+                // const child= basketItems.childNodes;                   see mobina
+                // const childNodes = [... child[3].childNodes]     <---- 
+                // const counter = [... childNodes[5].children]
+                // const value = [... counter.children]
+                // console.log(counter)
+                addQuantity.nextElementSibling.innerText = addedItem.quantity;  //   and see it
+            }
+        })
 
     }
     
