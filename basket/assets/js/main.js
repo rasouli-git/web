@@ -120,6 +120,13 @@ class Ui{
             <span class="fa fa-trash"></span>
           </span>`;
           basketItems.appendChild(div);
+
+
+    }
+    setupApp(){
+        cart = Storage.getCart() || [];
+        cart.forEach((cartItem)=> this.addCartItem(cartItem))
+        this.setCartValue(cart)
     }
 
 }
@@ -137,6 +144,9 @@ class Storage{
     static saveCart(cart){
         localStorage.setItem('cart',JSON.stringify(cart))
     }
+    static getCart(){
+        return JSON.parse(localStorage.getItem('cart'));
+    }
 }
 
 document.addEventListener('DOMContentLoaded',()=>{
@@ -144,6 +154,7 @@ document.addEventListener('DOMContentLoaded',()=>{
     const products = new Products;
     const productsData = products.getProducts();
     const ui = new Ui;
+    ui.setupApp();
     ui.displayProducts(productsData);
     ui.getAddTocardBtns();
     Storage.saveProducts(productsData);
