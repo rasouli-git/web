@@ -6,6 +6,7 @@ const productDOM = document.querySelector('.product-center');
 
 const cartTotal = document.querySelector('.total-price-val');
 const cartItems = document.querySelector('.cart-items');
+const basketItems = document.querySelector('.basket__item');
 
 let cart = []
 
@@ -73,12 +74,15 @@ class Ui{
                 event.target.innerText = 'in cart';
                 event.target.disabled = true
 
-                const addedProduct = Storage.getProduct(id);
+                const addedProduct = {... Storage.getProduct(id),quantity : 1 };
 
-                cart = [... cart,{... addedProduct ,quantity : 1 }]
+                cart = [... cart,{... addedProduct}]
 
                 Storage.saveCart(cart);
+
                 this.setCartValue(cart)
+
+                this.addCartItem(addedProduct)
             })
 
             // console.log(id)
@@ -95,6 +99,27 @@ class Ui{
         },0)
         cartTotal.innerText = totalPrice.toFixed(2);
         cartItems.innerText = tempCartItems;
+    }
+    addCartItem(cartItem){
+        const div = document.createElement('div');
+        div.classList.add('item');
+        div.innerHTML = 
+        ` <div class="image">
+            <img src=${cartItem.imageUrl} alt="">
+          </div>
+          <div class="detail">
+            <span class="title">${cartItem.title}</span>
+            <span class="price">${cartItem.price}</span>
+          </div>
+          <div class="counter">
+            <span class="fa fa-chevron-up"></span>
+            <span class="value">${cartItem.quantity}</span>
+            <span class="fa fa-chevron-down"></span>
+          </div>
+          <span class="remove">
+            <span class="fa fa-trash"></span>
+          </span>`;
+          basketItems.appendChild(div);
     }
 
 }
