@@ -114,7 +114,7 @@ class Ui{
           </div>
           <div class="detail">
             <span class="title">${cartItem.title}</span>
-            <span class="price">${cartItem.price}</span>
+            <span class="price">${cartItem.price} $</span>
           </div>
           <div class="counter">
             <span class="fa fa-chevron-up" data-id=${cartItem.id}></span>
@@ -145,16 +145,36 @@ class Ui{
                 addedItem.quantity ++;
                 this.setCartValue(cart)
                 Storage.saveCart(cart)
-                // const child= basketItems.childNodes;                   see mobina
-                // const childNodes = [... child[3].childNodes]     <---- 
-                // const counter = [... childNodes[5].children]
-                // const value = [... counter.children]
-                // console.log(counter)
                 addQuantity.nextElementSibling.innerText = addedItem.quantity;  //   and see it
+            }
+            else if(event.target.classList.contains('fa-trash')){
+                const removeItem = event.target;
+                const _removedItem = cart.find(c => c.id == removeItem.dataset.id);
+                this.removeItem(_removedItem.id);
+                Storage.saveCart(cart);
+                basketItems.removeChild(removeItem.parentElement.parentElement)
+            }
+            else if(event.target.classList.contains('fa-chevron-down')){
+                const subQuantity = event.target;
+                const substractedItem = cart.find(c => c.id == subQuantity.dataset.id);
+                
+                if(substractedItem.quantity === 1){
+                    this.removeItem(substractedItem.id);
+                    basketItems.removeChild(subQuantity.parentElement.parentElement);
+                    return;
+                }
+
+                substractedItem.quantity --;
+                this.setCartValue(cart)
+                Storage.saveCart(cart)
+                subQuantity.previousElementSibling.innerText = substractedItem.quantity;
             }
         })
 
     }
+
+
+
     
     clearCart(){
         cart.forEach((cItem)=> this.removeItem(cItem.id));
