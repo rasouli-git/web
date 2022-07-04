@@ -1,0 +1,58 @@
+export const digiLink=[
+    {
+        id:1,
+        link:'',
+        imageUrl:'./assets/images/hero/digi-link/digi-jet.png',
+        alt:'digi-link image',
+        title:'دیجی‌کالا جت',
+    },
+    {
+        id:2,
+        link:'',
+        imageUrl:'./assets/images/hero/digi-link/digi-style.png',
+        alt:'digi-link image',
+        title:'دیجی استایل',
+    },
+    {
+        id:3,
+        link:'',
+        imageUrl:'./assets/images/hero/digi-link/digi-pen.png',
+        alt:'digi-link image',
+        title:'دیجی پن',
+    },
+    {
+        id:4,
+        link:'',
+        imageUrl:'./assets/images/hero/digi-link/digi-mehr.png',
+        alt:'digi-link image',
+        title:'دیجی‌کالا مهر',
+    },
+    {
+        id:5,
+        link:'',
+        imageUrl:'./assets/images/hero/digi-link/assignment.png',
+        alt:'digi-link image',
+        title:'ماموریت‌ها',
+    },
+    {
+        id:6,
+        link:'',
+        imageUrl:'./assets/images/hero/digi-link/digi-plus.png',
+        alt:'digi-link image',
+        title:'دیجی پلاس',
+    },
+    {
+        id:7,
+        link:'',
+        imageUrl:'./assets/images/hero/digi-link/digi-club.png',
+        alt:'digi-link image',
+        title:'دیجی کلاب',
+    },
+    {
+        id:7,
+        link:'',
+        imageUrl:'./assets/images/hero/digi-link/dot-icon.png',
+        alt:'digi-link image',
+        title:'بیشتر',
+    },
+]
