@@ -467,32 +467,35 @@ header .banner img {
 .amazing .amazing-slider__col a .col__title .icon {
   font-size: 0.9rem;
 }
-.amazing .amazing-slider__item {
+.amazing .amazing-slider .slider-items {
+  display: flex;
+}
+.amazing .amazing-slider .slider-items .amazing-slider__item {
   background-color: #fff;
   padding: 1rem 1rem;
   margin-left: 3px;
   border-radius: 4px;
 }
-.amazing .amazing-slider__item a {
+.amazing .amazing-slider .slider-items .amazing-slider__item a {
   display: flex;
   justify-content: center;
   align-items: flex-end;
   flex-direction: column;
 }
-.amazing .amazing-slider__item a .item-image {
+.amazing .amazing-slider .slider-items .amazing-slider__item a .item-image {
   margin: 1rem 0;
 }
-.amazing .amazing-slider__item a .item-image img {
+.amazing .amazing-slider .slider-items .amazing-slider__item a .item-image img {
   width: 130px;
   height: 130px;
 }
-.amazing .amazing-slider__item a .item-detail {
+.amazing .amazing-slider .slider-items .amazing-slider__item a .item-detail {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.amazing .amazing-slider__item a .item-detail .item-discount {
+.amazing .amazing-slider .slider-items .amazing-slider__item a .item-detail .item-discount {
   width: 34px;
   height: 20px;
   display: flex;
@@ -501,35 +504,35 @@ header .banner img {
   border-radius: 40px;
   background-color: #ef394e;
 }
-.amazing .amazing-slider__item a .item-detail .item-discount span {
+.amazing .amazing-slider .slider-items .amazing-slider__item a .item-detail .item-discount span {
   color: #fff;
   font-size: 1.1rem;
 }
-.amazing .amazing-slider__item a .item-detail .item-price {
+.amazing .amazing-slider .slider-items .amazing-slider__item a .item-detail .item-price {
   color: #424750;
 }
-.amazing .amazing-slider__item a .item-detail .item-price span {
+.amazing .amazing-slider .slider-items .amazing-slider__item a .item-detail .item-price span {
   font-size: 1.3rem;
 }
-.amazing .amazing-slider__item a .item-detail .item-price span:last-child {
+.amazing .amazing-slider .slider-items .amazing-slider__item a .item-detail .item-price span:last-child {
   font-size: 0.9rem;
   font-weight: bold;
 }
-.amazing .amazing-slider__item a .item-oldPrice {
+.amazing .amazing-slider .slider-items .amazing-slider__item a .item-oldPrice {
   color: #c0c2c5;
   font-size: 0.9rem;
   margin-bottom: 1rem;
   margin-left: 3rem;
 }
-.amazing .amazing-slider__item a .item-oldPrice span {
+.amazing .amazing-slider .slider-items .amazing-slider__item a .item-oldPrice span {
   text-decoration: line-through;
 }
-.amazing .amazing-slider__item a .item-progress {
+.amazing .amazing-slider .slider-items .amazing-slider__item a .item-progress {
   direction: ltr;
   width: 100%;
   display: none;
 }
-.amazing .amazing-slider__item a .item-progress progress {
+.amazing .amazing-slider .slider-items .amazing-slider__item a .item-progress progress {
   width: 100%;
 }
 .amazing .amazing-slider__more {

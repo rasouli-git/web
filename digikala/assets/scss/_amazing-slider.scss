@@ -42,77 +42,81 @@
             }
         }
 
-        &__item{
-            background-color: $color-neutral-00;
-            padding: 1rem 1rem;
-            margin-left: 3px;
-            border-radius: 4px;
-            
-            a{
-                display: flex;
-                justify-content: center;
-                align-items: flex-end;
-                flex-direction: column;
+        .slider-items{
+            display: flex;
 
-                .item-image{
-                    margin: 1rem 0;
-
-                    img{
-                        width: 130px;
-                        height: 130px;
-                    }
-                }
-                .item-detail{
-                    width: 100%;
+            .amazing-slider__item{
+                background-color: $color-neutral-00;
+                padding: 1rem 1rem;
+                margin-left: 3px;
+                border-radius: 4px;
+                
+                a{
                     display: flex;
-                    align-items: center;
-                    justify-content: space-between;
-
-                    .item-discount{
-                        width: 34px;
-                        height: 20px;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        border-radius: 40px;
-                        background-color: $color-primary-700;
-
-                        span{
-                            color: $color-white;
-                            font-size: 1.1rem;
+                    justify-content: center;
+                    align-items: flex-end;
+                    flex-direction: column;
+    
+                    .item-image{
+                        margin: 1rem 0;
+    
+                        img{
+                            width: 130px;
+                            height: 130px;
                         }
                     }
-                    .item-price{
-                        color: $color-neutral-700;
-
-                        span{
-                            font-size: 1.3rem;
-
-                            &:last-child{
-                                font-size: .9rem;
-                                font-weight: bold;
+                    .item-detail{
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+    
+                        .item-discount{
+                            width: 34px;
+                            height: 20px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            border-radius: 40px;
+                            background-color: $color-primary-700;
+    
+                            span{
+                                color: $color-white;
+                                font-size: 1.1rem;
                             }
                         }
-
+                        .item-price{
+                            color: $color-neutral-700;
+    
+                            span{
+                                font-size: 1.3rem;
+    
+                                &:last-child{
+                                    font-size: .9rem;
+                                    font-weight: bold;
+                                }
+                            }
+    
+                        }
                     }
-                }
-                .item-oldPrice{
-                    color: $color-neutral-300;
-                    font-size: .9rem;
-                    margin-bottom: 1rem;
-                    margin-left: 3rem;
-                    
-                    span{
-                        text-decoration: line-through ;
+                    .item-oldPrice{
+                        color: $color-neutral-300;
+                        font-size: .9rem;
+                        margin-bottom: 1rem;
+                        margin-left: 3rem;
+                        
+                        span{
+                            text-decoration: line-through ;
+                        }
                     }
-                }
-                .item-progress{
-                    direction: ltr;
-                    width: 100%;
-                    display: none;
-
-                    progress{
+                    .item-progress{
+                        direction: ltr;
                         width: 100%;
+                        display: none;
+    
+                        progress{
+                            width: 100%;
+                        }
                     }
                 }
             }
