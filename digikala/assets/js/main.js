@@ -1,5 +1,6 @@
 const linkList = document.querySelector('.link-list')
 import { digiLink } from "./products.js";
+import {amazingSlider} from './products.js';
 
 
 
@@ -8,8 +9,10 @@ import { digiLink } from "./products.js";
 class Detail{
 
     getDigiLink(){
-
         return digiLink
+    }
+    getAmazingSlider(){
+        return amazingSlider;
     }
 }
 
