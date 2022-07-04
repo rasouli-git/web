@@ -152,31 +152,7 @@ export const amazingSlider = [
         imageUrl:'./assets/images/hero/amazing-slider/slide-12.jpg',
         alt:'slider image',
         discount:10,
-        price:2000,
+        price:200000,
     },
-    
-    {
-        id:12,
-        link:'',
-        imageUrl:'./assets/images/hero/amazing-slider/slide-12.jpg',
-        alt:'slider image',
-        discount:10,
-        price:2000,
-    },
-    {
-        id:12,
-        link:'',
-        imageUrl:'./assets/images/hero/amazing-slider/slide-12.jpg',
-        alt:'slider image',
-        discount:10,
-        price:2000,
-    },
-    {
-        id:12,
-        link:'',
-        imageUrl:'./assets/images/hero/amazing-slider/slide-12.jpg',
-        alt:'slider image',
-        discount:10,
-        price:2000,
-    },
+
 ]
