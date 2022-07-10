@@ -1,0 +1,180 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "title": "watch product",
+      "class": "watch",
+      "price": 19.99,
+      "image": "./assets/images/watch-1.png"
+    },
+    {
+      "id": 2,
+      "title": "watch product",
+      "class": "watch",
+      "price": 14.99,
+      "image": "./assets/images/watch-2.webp"
+    },
+    {
+      "id": 3,
+      "title": "watch product",
+      "class": "watch",
+      "price": 20.02,
+      "image": "./assets/images/watch-3.jpg"
+    },
+    {
+      "id": 4,
+      "title": "watch product",
+      "class": "watch",
+      "price": 18.00,
+      "image": "./assets/images/watch-4.jpg"
+    },
+    {
+      "id": 5,
+      "title": "watch product",
+      "class": "watch",
+      "price": 65.00,
+      "image": "./assets/images/watch-5.jpg"
+    },
+    {
+      "id": 6,
+      "title": "watch product",
+      "class": "watch",
+      "price": 187.00,
+      "image": "./assets/images/watch-6.jpg"
+    },
+
+
+    {
+      "id": 7,
+      "title": "shirt product",
+      "class": "shirt",
+      "price": 11.99,
+      "image": "./assets/images/shirt-1.jpg"
+    },
+    {
+      "id": 8,
+      "title": "shirt product",
+      "class": "shirt",
+      "price": 5.99,
+      "image": "./assets/images/shirt-2.jpg"
+    },
+    {
+      "id": 9,
+      "title": "shirt product",
+      "class": "shirt",
+      "price": 12.02,
+      "image": "./assets/images/shirt-3.jpg"
+    },
+    {
+      "id": 10,
+      "title": "shirt product",
+      "class": "shirt",
+      "price": 6.00,
+      "image": "./assets/images/shirt-4.jpg"
+    },
+    {
+      "id": 11,
+      "title": "shirt product",
+      "class": "shirt",
+      "price": 9.00,
+      "image": "./assets/images/shirt-5.jpg"
+    },
+    {
+      "id": 12,
+      "title": "shirt product",
+      "class": "shirt",
+      "price": 17.00,
+      "image": "./assets/images/shirt-6.jpg"
+    },
+
+
+
+    {
+      "id": 13,
+      "title": "gown product",
+      "class": "gown",
+      "price": 89.99,
+      "image": "./assets/images/gown-1.jpg"
+    },
+    {
+      "id": 14,
+      "title": "gown product",
+      "class": "gown",
+      "price": 99.99,
+      "image": "./assets/images/gown-2.jpg"
+    },
+    {
+      "id": 15,
+      "title": "gown product",
+      "class": "gown",
+      "price": 120.02,
+      "image": "./assets/images/gown-3.jpg"
+    },
+    {
+      "id": 16,
+      "title": "gown product",
+      "class": "gown",
+      "price": 116.00,
+      "image": "./assets/images/gown-4.jpg"
+    },
+    {
+      "id": 17,
+      "title": "gown product",
+      "class": "gown",
+      "price": 110.00,
+      "image": "./assets/images/gown-5.jpg"
+    },
+    {
+      "id": 18,
+      "title": "gown product",
+      "class": "gown",
+      "price": 171.00,
+      "image": "./assets/images/gown-6.jpg"
+    },
+
+
+    {
+      "id": 19,
+      "title": "jewelry product",
+      "class": "jewelry",
+      "price": 60.00,
+      "image": "./assets/images/jewelry-1.jpg"
+    },
+    {
+      "id": 20,
+      "title": "jewelry product",
+      "class": "jewelry",
+      "price": 71.99,
+      "image": "./assets/images/jewelry-2.jpg"
+    },
+    {
+      "id": 21,
+      "title": "jewelry product",
+      "class": "jewelry",
+      "price": 65.00,
+      "image": "./assets/images/jewelry-3.jpg"
+    },
+    {
+      "id": 22,
+      "title": "jewelry product",
+      "class": "jewelry",
+      "price": 68.00,
+      "image": "./assets/images/jewelry-4.jpg"
+    },
+    {
+      "id": 23,
+      "title": "jewelry product",
+      "class": "jewelry",
+      "price": 64.00,
+      "image": "./assets/images/jewelry-5.jpg"
+    },
+    {
+      "id": 24,
+      "title": "jewelry product",
+      "class": "jewelry",
+      "price": 69.00,
+      "image": "./assets/images/jewelry-6.jpg"
+    }
+  ]
+  
+}

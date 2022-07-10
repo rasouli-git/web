@@ -79,9 +79,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 .products .product {
   width: 20%;
-  margin: 0 1rem;
+  margin: 1rem;
   padding: 2rem;
-  background-color: rgb(247, 247, 247);
+  background-color: rgb(219, 212, 212);
   border-radius: 8px;
 }
 .products .product .img-container img {
@@ -95,5 +95,5 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #fff;
   border-radius: 8px;
   margin-top: 8px;
-  border: 1px solid #ccc;
+  border: 1px solid #f6f6f6;
 }/*# sourceMappingURL=main.css.map */
