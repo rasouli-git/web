@@ -1,6 +1,7 @@
 //  localhost:3000/items
 const searchInput = document.querySelector('#search');
 const productsDOM = document.querySelector('.products');
+const btns = document.querySelectorAll('.btn')
 
 let allProductsData = [];
 
@@ -41,22 +42,17 @@ function renderProducts(products,filters){
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 searchInput.addEventListener('input',(e)=>{
     filters.searchItems = e.target.value;
     renderProducts(allProductsData,filters)
 
+})
+
+btns.forEach(btn=>{
+    btn.addEventListener('click',(e)=>{
+        const filter = e.target.dataset.filter
+        // console.log(filter);
+        filters.searchItems = filter;
+        renderProducts(allProductsData,filters)
+    })
 })
