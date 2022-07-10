@@ -56,3 +56,6 @@ btns.forEach(btn=>{
         renderProducts(allProductsData,filters)
     })
 })
+
+
+// ******************************************************************
